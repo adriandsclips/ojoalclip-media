@@ -1,0 +1,391 @@
+{
+ "version": 1,
+ "zona": "Europe/Madrid",
+ "ventanas": [
+  "10:00",
+  "13:30",
+  "16:30",
+  "19:30",
+  "23:00"
+ ],
+ "canal_buffer_tiktok": "6b0588bd8541f09ecb893366",
+ "org_buffer": "6b05867b83d30e5a5320d5a9",
+ "pages_base": "https://adriandsclips.github.io/ojoalclip-media/",
+ "activas": [
+  "Madeon",
+  "Mumford",
+  "Bruiser",
+  "InternetGirl"
+ ],
+ "hueco_5": "SIN CAMPAÑA: ninguna otra campaña revisada cumple todos los criterios (ver notas). Ventana de las 23:00 libre hasta que haya una válida.",
+ "reservas": [
+  {
+   "clave": "ArzUrus",
+   "nombre": "Arz Urus Clipping Campaign",
+   "id": "ea416af3-f1aa-4b56-9c8b-f2a51e6d6df4",
+   "nota": "Español, audio propio, sin preaprobación. Pendiente: leer sus 'normas de la comunidad' (no enlazadas). TikTok $0,50/1k, pago mínimo $10."
+  }
+ ],
+ "descartadas": {
+  "Daniel Curto": "exige página dedicada + bio",
+  "MoorHouse": "contenido degradante/explícito, no apto para la cuenta (nos unimos pero no se usa)",
+  "Pickleball CNPL": "cuenta >30 días y 50% audiencia US/CA",
+  "MAYDAY": "40% audiencia AU/NZ/UK/US",
+  "HardcoreSMP": "cuenta solo Minecraft + voz",
+  "theCUBE": "cuentas de tecnología empresarial",
+  "Santa Cruz": "página dedicada",
+  "Weeknd/BIIANCO/Ordley/ZHU": "sonido oficial obligatorio"
+ },
+ "campañas": {
+  "Madeon": {
+   "nombre": "Madeon - Victory Live Tour",
+   "id": "902924ae-4ed2-4449-b843-98318b509331",
+   "pago_cpm": 3.0,
+   "reglas": "Audio en vivo del clip (sin sonido oficial). Mín. 10 s. Texto en pantalla obligatorio (minúsculas). Caption corta con #madeon #tour. Solo material de la carpeta aprobada (Dropbox). Tras 2.000 vistas hay que mandar analíticas del vídeo (lo hace Adrián).",
+   "fuente": "https://www.dropbox.com/scl/fo/7rhk0h5wt550a573pjcye/AE8XuPbfPJOKPnMYYRA8_7M?rlkey=m7e8h22yjj32pqlwaab8zyt28&dl=1",
+   "textos": [
+    "this production is INSANE",
+    "no one told me the show looked like this",
+    "the lights are doing something illegal",
+    "madeon's new album is even better live",
+    "he rebuilt the whole album for this tour",
+    "how is this not an arena tour",
+    "this is a club show btw",
+    "the songs don't even sound the same live",
+    "first tour since good faith",
+    "if you loved shelter you need to see this"
+   ],
+   "captions": [
+    "the show is the point 🔊 #madeon #tour",
+    "victory live hits different #madeon #tour",
+    "best looking show running right now? #madeon #tour",
+    "this is what you're missing #madeon #tour",
+    "victory, but live #madeon #tour",
+    "no notes 🔥 #madeon #tour"
+   ],
+   "usados": [
+    "3 - Seattle - Adam Cutdown - 3 - iPod Touch (1) (1).mov",
+    "7 - Seattle - Adam Cutdown 1 - Hi Cutdown 1 (1).mov",
+    "8 - Hugo 2 Shorter (1).mov",
+    "FM-261114-MADEON-DANCING ON YOUR GRAVE-CHRISTOPHER FUNG-IG_-TT_.mp4",
+    "FM-261114-MADEON-HUGO 2-CHRISTOPHER FUNG-IG_-TT_.mp4",
+    "FM-261114-MADEON-MANIA_REVOLUTION_IMPERIUM-PHIL CARRUTHERS-IG_-TT_.mp4"
+   ]
+  },
+  "Mumford": {
+   "nombre": "Mumford & Sons / Chris Stapleton Live Performance",
+   "id": "ab601e43-9404-4375-8e1e-2b49db1aef26",
+   "pago_cpm": 2.0,
+   "reglas": "Audio en vivo, sin música añadida. Mín. 8 s. Texto en pantalla obligatorio. Nombrar a ambos artistas + #mumfordandsons #chrisstapleton #cmas #performance. Solo material aprobado. Tras 2.000 vistas mandar analíticas del vídeo (Adrián).",
+   "fuente": "https://www.dropbox.com/scl/fo/szc32ectobolwcs892wy8/AKO_FRmONav7nUiSwCq6yFM?rlkey=o73ofhv0mcy39daafzp4l7s7x&dl=1",
+   "textos": [
+    "this collab sounds even better live",
+    "the way their voices blend live 😭",
+    "banjos from london meet nashville and it just works",
+    "chris stapleton and mumford on one stage is unfair to everyone else",
+    "they did NOT have to go this hard on their CMAS debut",
+    "nashville said come on in and they did NOT miss",
+    "mumford & sons at the CMAS. i repeat. mumford & sons at the CMAS"
+   ],
+   "captions": [
+    "Mumford & Sons x Chris Stapleton live at the CMAs 🎻 #mumfordandsons #chrisstapleton #cmas #performance",
+    "Mumford & Sons and Chris Stapleton, one stage 🔥 #mumfordandsons #chrisstapleton #cmas #performance",
+    "that harmony though 😭 Mumford & Sons + Chris Stapleton #mumfordandsons #chrisstapleton #cmas #performance",
+    "Mumford & Sons with Chris Stapleton - Here (live) #mumfordandsons #chrisstapleton #cmas #performance",
+    "London meets Nashville: Mumford & Sons x Chris Stapleton #mumfordandsons #chrisstapleton #cmas #performance",
+    "Mumford & Sons and Chris Stapleton went off at the CMAs #mumfordandsons #chrisstapleton #cmas #performance"
+   ],
+   "usados": [
+    "Mumford & Sons with Chris Stapleton - #U201cHere#U201d _ Live at CMA Awards 2026.mp4",
+    "SnapInsta.to_AQMR8lgOgzaZqitOu0FfhrfDtdpBPRrl2ysZBvtsD2nrqx8wgx02a45HBk9MyifgUoKSEUChXqub-Jb6bFPmxQNhJV1X7SizEwl69jw.mp4",
+    "SnapInsta.to_AQNC9ZEx24G0lOtvKW34bm3Sl65-WRny766Ffu2fAhJx_qMDYh8ryS2TMULwZmE3Tot0YkaE2f1qKCCG8LnE4pSqAfaeQPzkMKDnqwY.mp4",
+    "SnapInsta.to_AQNuVBSuIOUuPaqnPOHrXWb7UnwOQkh2m_c8ZvCzENg1NJRocyJvtJcDFJh82y_r8TrgALrbh3Yqk627maWB539vHZs4VH2gszKRWH4.mp4",
+    "SnapInsta.to_AQPERdnjvP8eaEYRhyXfy2OMeVJsabQJhZDdUSdDdDxXB3jbqJSMk3ZzW3YxEae9VkyuTnD5SEpyzw-r6NnXr0Nd92qrOKEXPCe_tZs.mp4",
+    "SnapInsta.to_AQPO4ZPYzcWovqCsEqswSICadhJMwKhHcK1mDljC_BhkJbfqUs2mHnur1skK-46vN6j2V9BSSTr15fSYfyMIyGYkajY7QsiUkZDTBUM.mp4"
+   ],
+   "texto_y": 1330
+  },
+  "Bruiser": {
+   "nombre": "Bruiser Wolf - The Dealer Wins Freestyle",
+   "id": "b5063b46-6922-4227-8da5-f0f4560386ef",
+   "pago_cpm": 1.0,
+   "reglas": "Solo material de la carpeta oficial. Audio original, sin música. Texto en pantalla obligatorio: una frase de la lista, literal. Caption propia, sincera. Inglés. El post debe seguir publicado 30 días. Likes visibles.",
+   "fuente": "https://drive.google.com/drive/folders/1YbqidY-qlc3rlqGHTNrqwCS1xohoZg5b",
+   "captions": [
+    "Bruiser Wolf freestyling a track from The Dealer Wins",
+    "The way Bruiser Wolf rides this beat",
+    "Listen to the wordplay in this one",
+    "Bruiser Wolf over Conductor Williams production",
+    "Bruiser Wolf and Conductor Williams, The Dealer Wins",
+    "Bruiser Wolf on The Dealer Wins, no skips"
+   ],
+   "usados": [
+    "1.mov",
+    "2.mov",
+    "4.mov",
+    "5.mov",
+    "8.mov",
+    "9.mov"
+   ],
+   "textos": [
+    "this is going to be one of the best albums of the year and nobody’s talking about it",
+    "people say hip-hop has no substance in 2026. listen to this",
+    "he’s funny and dead serious in the same verse",
+    "instant classic. I said what I said",
+    "it’s not for everyone and that’s the point",
+    "NBL star Kevin Durant just called the album a \"masterpiece\""
+   ],
+   "duracion": 30
+  },
+  "InternetGirl": {
+   "nombre": "Internet Girl - Tour Clipping | Edit Reposts/Edits",
+   "id": "817a6422-c541-4d42-a19d-063ddb7873ee",
+   "pago_cpm": 1.0,
+   "reglas": "15-30 s, audio original del directo (sin sonido oficial). Etiqueta @internetgirlmusic, #InternetGirl #SoldOut. 'sold out' solo referido al show de NYC. Termina el 18 dic.",
+   "fuente": "https://drive.google.com/drive/folders/1Mfd5r-zhrMdhA35e6NwGsUUxdDXfhOwI",
+   "captions": {
+    "02": "Internet Girl's first US tour 🔊 @internetgirlmusic #InternetGirl #SoldOut",
+    "03": "The crowd went off 🤯 @internetgirlmusic #InternetGirl #SoldOut",
+    "04": "From Cape Town to a sold-out NYC show 🎟️ @internetgirlmusic #InternetGirl #SoldOut",
+    "05": "This energy is unreal ⚡ @internetgirlmusic #InternetGirl #SoldOut",
+    "07": "The room exploded 💥 @internetgirlmusic #InternetGirl #SoldOut",
+    "08": "First US tour, no brakes 🚀 @internetgirlmusic #InternetGirl #SoldOut"
+   },
+   "usados": [],
+   "nota_material": "Los clips 01-10 se hicieron con montajes propios; para reponer usar make_stock (material del Drive)."
+  }
+ },
+ "cola": [
+  {
+   "id": "Madeon-01",
+   "campaña": "Madeon",
+   "archivo": "clips/Madeon-01.mp4",
+   "texto": "the show is the point 🔊 #madeon #tour",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Madeon-02",
+   "campaña": "Madeon",
+   "archivo": "clips/Madeon-02.mp4",
+   "texto": "victory live hits different #madeon #tour",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Madeon-03",
+   "campaña": "Madeon",
+   "archivo": "clips/Madeon-03.mp4",
+   "texto": "best looking show running right now? #madeon #tour",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Madeon-04",
+   "campaña": "Madeon",
+   "archivo": "clips/Madeon-04.mp4",
+   "texto": "this is what you're missing #madeon #tour",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Madeon-05",
+   "campaña": "Madeon",
+   "archivo": "clips/Madeon-05.mp4",
+   "texto": "victory, but live #madeon #tour",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Madeon-06",
+   "campaña": "Madeon",
+   "archivo": "clips/Madeon-06.mp4",
+   "texto": "no notes 🔥 #madeon #tour",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Mumford-01",
+   "campaña": "Mumford",
+   "archivo": "clips/Mumford-01.mp4",
+   "texto": "Mumford & Sons x Chris Stapleton live at the CMAs 🎻 #mumfordandsons #chrisstapleton #cmas #performance",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Mumford-02",
+   "campaña": "Mumford",
+   "archivo": "clips/Mumford-02.mp4",
+   "texto": "Mumford & Sons and Chris Stapleton, one stage 🔥 #mumfordandsons #chrisstapleton #cmas #performance",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Mumford-03",
+   "campaña": "Mumford",
+   "archivo": "clips/Mumford-03.mp4",
+   "texto": "that harmony though 😭 Mumford & Sons + Chris Stapleton #mumfordandsons #chrisstapleton #cmas #performance",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Mumford-04",
+   "campaña": "Mumford",
+   "archivo": "clips/Mumford-04.mp4",
+   "texto": "Mumford & Sons with Chris Stapleton - Here (live) #mumfordandsons #chrisstapleton #cmas #performance",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Mumford-05",
+   "campaña": "Mumford",
+   "archivo": "clips/Mumford-05.mp4",
+   "texto": "London meets Nashville: Mumford & Sons x Chris Stapleton #mumfordandsons #chrisstapleton #cmas #performance",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Mumford-06",
+   "campaña": "Mumford",
+   "archivo": "clips/Mumford-06.mp4",
+   "texto": "Mumford & Sons and Chris Stapleton went off at the CMAs #mumfordandsons #chrisstapleton #cmas #performance",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Bruiser-01",
+   "campaña": "Bruiser",
+   "archivo": "clips/Bruiser-01.mp4",
+   "texto": "Bruiser Wolf freestyling a track from The Dealer Wins",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Bruiser-02",
+   "campaña": "Bruiser",
+   "archivo": "clips/Bruiser-02.mp4",
+   "texto": "The way Bruiser Wolf rides this beat",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Bruiser-03",
+   "campaña": "Bruiser",
+   "archivo": "clips/Bruiser-03.mp4",
+   "texto": "Listen to the wordplay in this one",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Bruiser-04",
+   "campaña": "Bruiser",
+   "archivo": "clips/Bruiser-04.mp4",
+   "texto": "Bruiser Wolf over Conductor Williams production",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Bruiser-05",
+   "campaña": "Bruiser",
+   "archivo": "clips/Bruiser-05.mp4",
+   "texto": "Bruiser Wolf and Conductor Williams, The Dealer Wins",
+   "estado": "en_stock"
+  },
+  {
+   "id": "Bruiser-06",
+   "campaña": "Bruiser",
+   "archivo": "clips/Bruiser-06.mp4",
+   "texto": "Bruiser Wolf on The Dealer Wins, no skips",
+   "estado": "en_stock"
+  },
+  {
+   "id": "InternetGirl-02",
+   "campaña": "InternetGirl",
+   "archivo": "clips/InternetGirl-02.mp4",
+   "texto": "Internet Girl's first US tour 🔊 @internetgirlmusic #InternetGirl #SoldOut",
+   "estado": "en_stock"
+  },
+  {
+   "id": "InternetGirl-03",
+   "campaña": "InternetGirl",
+   "archivo": "clips/InternetGirl-03.mp4",
+   "texto": "The crowd went off 🤯 @internetgirlmusic #InternetGirl #SoldOut",
+   "estado": "en_stock"
+  },
+  {
+   "id": "InternetGirl-04",
+   "campaña": "InternetGirl",
+   "archivo": "clips/InternetGirl-04.mp4",
+   "texto": "From Cape Town to a sold-out NYC show 🎟️ @internetgirlmusic #InternetGirl #SoldOut",
+   "estado": "en_stock"
+  },
+  {
+   "id": "InternetGirl-05",
+   "campaña": "InternetGirl",
+   "archivo": "clips/InternetGirl-05.mp4",
+   "texto": "This energy is unreal ⚡ @internetgirlmusic #InternetGirl #SoldOut",
+   "estado": "en_stock"
+  },
+  {
+   "id": "InternetGirl-07",
+   "campaña": "InternetGirl",
+   "archivo": "clips/InternetGirl-07.mp4",
+   "texto": "The room exploded 💥 @internetgirlmusic #InternetGirl #SoldOut",
+   "estado": "en_stock"
+  },
+  {
+   "id": "InternetGirl-08",
+   "campaña": "InternetGirl",
+   "archivo": "clips/InternetGirl-08.mp4",
+   "texto": "First US tour, no brakes 🚀 @internetgirlmusic #InternetGirl #SoldOut",
+   "estado": "en_stock"
+  }
+ ],
+ "dia": {},
+ "historial": [
+  {
+   "id": "IG-01",
+   "campaña": "InternetGirl",
+   "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7711730869471399201",
+   "publicado": "2026-11-24T13:34:14Z",
+   "entregado": true
+  }
+ ],
+ "antiguas": [
+  {
+   "nombre": "DJMIAMI - Vive Bonito",
+   "id": "d2faac69-c6a1-45e9-9c12-6e31055a700d",
+   "motivo": "7 clips en seguimiento"
+  },
+  {
+   "nombre": "XG - Depends",
+   "id": "a10ea3b7-fb1e-48f9-bf42-10fa676ac1f1"
+  },
+  {
+   "nombre": "ZHU & KamJam - Party Goin'",
+   "id": "ea074c0b-cd24-4860-ba33-0df5c99a8f10"
+  },
+  {
+   "nombre": "Melly Mike - Clown Pt. II",
+   "id": "269c4afe-47e4-47b7-9293-60de06fc2469"
+  },
+  {
+   "nombre": "Melly Mike - Clown Pt.1",
+   "id": "403544ad-44e2-4265-b070-3575abdb613c"
+  },
+  {
+   "nombre": "SHAB - Catch Me If You Can",
+   "id": "0999129a-cd3b-4219-bfb1-c58c7c0788ff"
+  },
+  {
+   "nombre": "CrookBrown - Wait For Me",
+   "id": "ac1fbc3c-4d08-491c-8c9a-ff02e266f5dc"
+  },
+  {
+   "nombre": "Henny Hermes",
+   "id": "3111a0d9-928f-4581-b914-f0845cf51fbf"
+  },
+  {
+   "nombre": "T Bird",
+   "id": "7120a2f6-c50b-49f5-8b31-748782428546"
+  },
+  {
+   "nombre": "The Wrecks - Hangin' Out",
+   "id": "aa8d652d-9cad-40c2-a043-fb46ced4884b"
+  },
+  {
+   "nombre": "Audien & Luke Alexander",
+   "id": "61dcced7-34d2-4dc4-ac6c-5bf6bae5b8e7"
+  },
+  {
+   "nombre": "MoorHouse Media Network",
+   "id": "d425dd80-81d0-41ca-8d1e-b9a91660fd62",
+   "motivo": "descartada por contenido"
+  }
+ ],
+ "nota_antiguas": "Content Rewards (24-11-2026) no muestra ninguna opción para salir de una campaña ni en la ficha ni en la lista. Se quedan en la lista; revisar si aparece la opción."
+}
