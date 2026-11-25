@@ -161,7 +161,7 @@
    "campaña": "Madeon",
    "archivo": "clips/Madeon-01.mp4",
    "texto": "the show is the point 🔊 #madeon #tour",
-   "estado": "en_stock"
+   "estado": "planificado"
   },
   {
    "id": "Madeon-02",
@@ -203,7 +203,7 @@
    "campaña": "Mumford",
    "archivo": "clips/Mumford-01.mp4",
    "texto": "Mumford & Sons x Chris Stapleton live at the CMAs 🎻 #mumfordandsons #chrisstapleton #cmas #performance",
-   "estado": "en_stock"
+   "estado": "planificado"
   },
   {
    "id": "Mumford-02",
@@ -245,7 +245,7 @@
    "campaña": "Bruiser",
    "archivo": "clips/Bruiser-01.mp4",
    "texto": "Bruiser Wolf freestyling a track from The Dealer Wins",
-   "estado": "en_stock"
+   "estado": "planificado"
   },
   {
    "id": "Bruiser-02",
@@ -287,7 +287,7 @@
    "campaña": "InternetGirl",
    "archivo": "clips/InternetGirl-02.mp4",
    "texto": "Internet Girl's first US tour 🔊 @internetgirlmusic #InternetGirl #SoldOut",
-   "estado": "en_stock"
+   "estado": "planificado"
   },
   {
    "id": "InternetGirl-03",
@@ -325,7 +325,41 @@
    "estado": "en_stock"
   }
  ],
- "dia": {},
+ "dia": {
+  "fecha": "2026-11-25",
+  "plan": [
+   {
+    "ventana": "10:00",
+    "clip_id": "Madeon-01",
+    "campaña": "Madeon",
+    "borrador_buffer": "6b06a27eb6204bca46dff3e0"
+   },
+   {
+    "ventana": "13:30",
+    "clip_id": "Mumford-01",
+    "campaña": "Mumford",
+    "borrador_buffer": "6b06a27fc68d7845a4980bae"
+   },
+   {
+    "ventana": "16:30",
+    "clip_id": "InternetGirl-02",
+    "campaña": "InternetGirl",
+    "borrador_buffer": "6b06a280b6204bca46dff520"
+   },
+   {
+    "ventana": "19:30",
+    "clip_id": "Bruiser-01",
+    "campaña": "Bruiser",
+    "borrador_buffer": "6b06a280d8874a038c0978a1"
+   },
+   {
+    "ventana": "23:00",
+    "clip_id": null,
+    "campaña": null,
+    "borrador_buffer": null
+   }
+  ]
+ },
  "historial": [
   {
    "id": "IG-01",
