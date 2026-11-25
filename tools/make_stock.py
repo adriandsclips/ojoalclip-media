@@ -46,6 +46,29 @@ def fetch_source(camp, url, max_mb=400):
     return d
 
 
+def fetch_long(camp, items):
+    """Directos largos: descarga cada archivo y lo trocea (sin recodificar) en piezas de 3 min dentro de [desde, hasta].
+    items: [{"url": ..., "prefijo": "bam", "desde": s, "hasta": s}]"""
+    d = Path("/tmp/oac_src") / camp
+    if d.exists() and any(d.glob("*_[0-9][0-9][0-9].mp4")):
+        return d
+    d.mkdir(parents=True, exist_ok=True)
+    for it in items:
+        raw = d / f"{it['prefijo']}.raw.mp4"
+        if not raw.exists():
+            subprocess.run(["curl", "-sL", "--max-time", "1800", "-o", str(raw), it["url"]], check=True)
+        _, _, total = probe(raw)
+        a, b = it.get("desde", 0), min(it.get("hasta", total), total)
+        n = 0
+        while a + 30 < b:
+            subprocess.run(["ffmpeg", "-v", "error", "-y", "-ss", str(a), "-t", str(min(180, b - a)), "-i", str(raw),
+                            "-c", "copy", "-avoid_negative_ts", "1", str(d / f"{it['prefijo']}_{n:03d}.mp4")], check=True)
+            a += 180
+            n += 1
+        raw.unlink()
+    return d
+
+
 def best_window(src, total, win):
     r = subprocess.run(["ffmpeg", "-v", "error", "-i", str(src), "-vn", "-ac", "1", "-ar", "8000", "-f", "s16le", "-"],
                        capture_output=True)
@@ -102,7 +125,8 @@ def main(camp, n):
     est = json.loads(EST.read_text())
     C = est["campañas"][camp]
     used = set(C.setdefault("usados", []))
-    src_dir = fetch_source(camp, C["fuente"], C.get("max_mb", 400))
+    src_dir = fetch_long(camp, C["fuentes_largas"]) if C.get("fuentes_largas") else \
+        fetch_source(camp, C["fuente"], C.get("max_mb", 400))
     files = sorted(p for p in src_dir.rglob("*") if p.suffix.lower() in VID and p.name not in used)
     random.shuffle(files)
     existing = [c["id"] for c in est["cola"] if c["campaña"] == camp] + [h.get("id", "") for h in est["historial"]]
@@ -123,10 +147,11 @@ def main(camp, n):
         k += 1
         cid = f"{camp}-{k:02d}"
         out = ROOT / "clips" / f"{cid}.mp4"
-        texts = C.get("textos") or [""]
-        caps = C["captions"] if isinstance(C["captions"], list) else list(C["captions"].values())
+        G = next((g for pre, g in C.get("grupos", {}).items() if f.name.startswith(pre)), C)
+        texts = G.get("textos") or [""]
+        caps = G["captions"] if isinstance(G["captions"], list) else list(G["captions"].values())
         subs = subs_ass(f, ss, dur, out.with_suffix(".subs.ass")) if C.get("subtitulos") else None
-        render(f, out, ss, dur, text=random.choice(texts) or None, seed=k, text_y=C.get("texto_y", 300), subs_ass=subs)
+        render(f, out, ss, dur, text=random.choice(texts) or None, seed=k, text_y=G.get("texto_y", C.get("texto_y", 300)), subs_ass=subs)
         if subs:
             Path(subs).unlink(missing_ok=True)
         est["cola"].append({"id": cid, "campaña": camp, "archivo": f"clips/{cid}.mp4",

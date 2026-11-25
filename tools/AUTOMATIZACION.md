@@ -7,6 +7,10 @@ Cuenta de TikTok: @ojo.al.clip. Zona horaria: Europe/Madrid.
 - **Nunca** confirmes las reglas ni pulses "Enviar clip" en Content Rewards: eso lo hace Adrián. Tú solo publicas, avisas y compruebas.
 - No uses herramientas de pago. No toques la bio ni el nombre de la cuenta.
 - Un clip por ventana; nunca dos clips de la misma campaña el mismo día.
+- **La rueda (5 comensales)**: siempre hay **5 campañas activas** y las **5 ventanas llenas**, una campaña distinta en
+  cada una. Cuando una campaña ya no puede darnos más dinero (cerrada, sin presupuesto, límite alcanzado, a punto de
+  cerrar), sale de la rueda y entra la mejor campaña disponible. Nunca se deja una ventana vacía salvo que, tras
+  revisar todo `discover`, no exista ninguna campaña que cumpla los criterios (entonces se avisa a Adrián).
 - Ventanas: 10:00, 13:30, 16:30, 19:30, 23:00 (hora de Madrid).
 - Si algo no se puede verificar, **no borres nada**: avisa a Adrián y deja el estado como está.
 - Todo el estado vive en `tools/estado.json` de este repositorio. Haz siempre `git pull --rebase` antes de `git push`.
@@ -55,20 +59,28 @@ Campaña: https://contentrewards.com/c/campaigns/<id>
 
 ## A) PREPARAR EL DÍA (cada mañana)
 1. Preparación común.
-2. Mira la lista `activas`. Para cada campaña comprueba el estado y la admisión. Si una ya no sirve (cerrada, sin
-   presupuesto, límite alcanzado o deja de cumplir los criterios), quítala de `activas` y añade a `historial_campañas`
-   el motivo. Si el límite es temporal, guarda la fecha de reinicio en `campañas[c].pausa_hasta`.
-   Sustitúyela por una reserva de `reservas` **solo si la reserva ya está validada** (que no tenga una `nota` de
-   pendiente). Al sustituir, únete a la campaña (botón "Unirse a la campaña") y lee su brief entero antes de usarla.
-   Si no hay ninguna reserva validada, busca en
-   `/api/campaign/campaigns/discover?collapseGroups=false&limit=50&view=summary` una que cumpla los criterios
-   (TikTok, audio del propio clip, sin sonido oficial, sin preaprobación, sin página dedicada ni bio, sin mínimo de
-   seguidores ni de antigüedad, que acepte audiencia de España, con presupuesto) y lee su documento de reglas
-   completo. Si no encuentras ninguna, deja el hueco y díselo a Adrián.
+2. **Revisar la rueda.** Para cada campaña de `activas` comprueba estado, admisión y presupuesto (en `discover`:
+   `budgetCents - metrics.budgetSpentCents` y `metrics.budgetProgressBps`). **Sale de la rueda** si: está cerrada, sin
+   presupuesto, con límite alcanzado, deja de cumplir los criterios o está **a punto de cerrar** (≥ 90 % del presupuesto
+   gastado, menos de 150 $ restantes o fecha de fin en ≤ 5 días). Quítala de `activas` y apúntalo en
+   `historial_campañas` con el motivo (si el límite es temporal, guarda `campañas[c].pausa_hasta`); pasa a `antiguas`.
+   Sus clips `en_stock` se quedan sin usar.
+   **Rellenar hasta 5**: usa primero una reserva validada de `reservas` (sin `nota` de pendiente); si no hay, busca en
+   `/api/campaign/campaigns/discover?collapseGroups=false&limit=50&view=summary` (pagina con `cursor`) las que cumplan
+   los criterios: TikTok, audio del propio clip (sin sonido oficial obligatorio), sin preaprobación
+   (`requiresApplication` false y `requirement.preApproval` false), sin página dedicada, sin bio/link en bio, sin
+   mínimo de seguidores ni antigüedad, sin exigir audiencia mayoritaria de un país (nada de "40% T1", "Tier 1
+   majority", "30% US"...), con material propio descargable (Dropbox/Drive) y contenido apto para la cuenta.
+   **Ordénalas por interés**: CPM de TikTok más alto, mucho presupuesto restante y poco gastado (campaña fresca), buenas
+   vistas por creador (viralidad del tema) y material fácil de clipear (cortes ya hechos > directos largos). Nunca una
+   a punto de cerrar. Lee el brief/documento de reglas **completo** (PDF/Google Doc enlazado), únete ("Unirse a la
+   campaña") y crea su ficha en `campañas` (nombre, id, pago_cpm, reglas, fuente, textos en pantalla, captions que
+   cumplan literalmente lo exigido, y si hace falta `duracion`, `texto_y`, `subtitulos`, `max_mb`). Fabrica stock con
+   `make_stock.py` antes de planificarla. Guarda en `reservas` (validadas) las siguientes mejores para la próxima vez.
 3. **Plan del día** (`estado.dia`): una entrada por ventana con `{ventana, clip_id, campaña, borrador_buffer}`.
    - Si hay un clip con estado `recuperar`, va en la **primera ventana** del día.
    - Reparte las campañas activas de forma que cada una salga como mucho una vez ese día y no repita la misma ventana
-     del día anterior. La ventana sin campaña (por ejemplo, porque solo hay 4 activas) queda vacía.
+     del día anterior. Las 5 ventanas deben quedar llenas (5 campañas distintas).
    - Para cada ventana coge el clip `en_stock` más antiguo de esa campaña.
 4. Para cada clip del plan crea un **borrador** en Buffer: `create_post` con `channelId`, `schedulingType: "automatic"`,
    `saveToDraft: true`, `text` = el texto del clip, `assets: [{video:{url: pages_base + archivo}}]` y
@@ -100,8 +112,9 @@ Campaña: https://contentrewards.com/c/campaigns/<id>
      campaña para el día siguiente.
    - Si no puedes verificar que no se envió, o si se puede volver a publicar, **no borres**: avisa a Adrián.
 3. Busca en `estado.dia` el clip de esta ventana. Si no hay ninguno, termina sin aviso.
-4. Comprueba que su campaña sigue activa y admite clips. Si no, usa el siguiente clip disponible de una campaña activa
-   que no haya salido hoy (crea su borrador como en A4), y anótalo.
+4. Comprueba que su campaña sigue activa y admite clips. Si no, sácala de la rueda (como en A2) y usa el siguiente clip
+   disponible de una campaña activa que no haya salido hoy (crea su borrador como en A4), y anótalo. Si no queda
+   ninguna, mete una campaña nueva siguiendo A2 si da tiempo; si no, avisa a Adrián.
 5. **Publica**: `create_post` con `channelId`, `schedulingType: "automatic"`, `draftId` = `borrador_buffer`,
    `mode: "shareNow"`, el mismo `text` y los mismos `assets`. Después llama a `get_post` cada 30 s (máximo 15 min)
    hasta que `status` sea `sent` y aparezca `externalLink`. Si sale `error`, avisa a Adrián con el mensaje.

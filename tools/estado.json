@@ -14,10 +14,10 @@
  "activas": [
   "Madeon",
   "Mumford",
-  "Bruiser",
-  "InternetGirl"
+  "InternetGirl",
+  "Emma",
+  "eBay"
  ],
- "hueco_5": "SIN CAMPAÑA: ninguna otra campaña revisada cumple todos los criterios (ver notas). Ventana de las 23:00 libre hasta que haya una válida.",
  "reservas": [
   {
    "clave": "ArzUrus",
@@ -153,6 +153,103 @@
    },
    "usados": [],
    "nota_material": "Los clips 01-10 se hicieron con montajes propios; para reponer usar make_stock (material del Drive)."
+  },
+  "Emma": {
+   "nombre": "Card Breaks with Emma Roberts | Fanatics Live",
+   "id": "c3e0abdc-c0d9-46bf-ad79-c6800cd7d4e3",
+   "pago_cpm": 4.0,
+   "reglas": "Campaña abierta (sin página dedicada ni bio, sin preaprobación, sin restricción de país). Solo material de sus carpetas (cortes previos de los directos de Summer Breaks). Clip EDITADO: nombre de Emma Roberts en pantalla desde el primer segundo, gancho fuerte, cortes rápidos, subtítulos. Caption con UNA frase literal ('Emma Roberts runs a card break show now' / 'Nobody told me Emma Roberts was a card collector' / 'Watch Emma Roberts rip cards live on Fanatics Live') + #SummerBreaks #FanaticsLive + @summerbreaks @collect @fanatics. Nada de citas falsas, burlas, vida personal ni sexualizar. Repartir entre momentos distintos. Riesgo: rechazan si la página no encaja (válidas: entretenimiento/celebridades).",
+   "fuente": "https://www.dropbox.com/scl/fo/ig60alxj73iwtujbwz7o6/AHf8NNvyLc-AWpK43USN-zg?rlkey=ka104t2p4fa9t34pfnh9i1ijw&dl=1",
+   "fuente_2": "https://www.dropbox.com/scl/fo/tildcvg6klclw5dkuene1/AO8TED0ynFScf85IyEZ4rZU?rlkey=v87ogkglqm7e2iixiprgc5l9f&dl=1",
+   "max_mb": 200,
+   "duracion": 25,
+   "texto_y": 610,
+   "subtitulos": true,
+   "textos": [
+    "Emma Roberts runs a card break show now",
+    "Nobody told me Emma Roberts was a card collector",
+    "POV: you're in Emma Roberts' card break",
+    "Emma Roberts rips cards live on Fanatics Live"
+   ],
+   "captions": [
+    "Emma Roberts runs a card break show now 🃏 catch Summer Breaks live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+    "Nobody told me Emma Roberts was a card collector 😳 Summer Breaks is live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+    "Watch Emma Roberts rip cards live on Fanatics Live ✨ @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+    "Emma Roberts runs a card break show now and the pulls are unreal 🔥 @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+    "Nobody told me Emma Roberts was a card collector 👀 Emma & Cody on Summer Breaks @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+    "Watch Emma Roberts rip cards live on Fanatics Live 🃏 Summer Breaks with Emma & Cody @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive"
+   ],
+   "usados": [
+    "81 - Still Shaking at the End.mp4",
+    "52 - Cody Loves the Drama.mp4",
+    "04 - Ezra to Five in Pack One.mp4",
+    "91 - The Smuggler's Outpost Regret.mp4",
+    "85 - Cody's Handwriting Is Unreadable.mp4",
+    "45 - Padme First, Red Auto Next.mp4"
+   ]
+  },
+  "eBay": {
+   "nombre": "eBay Live: Ovechkin, Bam Margera & Evan Mobley",
+   "id": "91c5082d-7c89-4359-8653-db87a4ca01d5",
+   "pago_cpm": 4.0,
+   "reglas": "Campaña abierta (sin página dedicada ni bio, sin preaprobación, sin restricción de país). Material: directos de sus carpetas (Ovechkin/CardVault, Bam Margera/Storied, Evan Mobley/Prime Time Sports Framing). Clip EDITADO: quién es en el primer segundo (nombre en pantalla), gancho fuerte, cortes, subtítulos. Caption: #eBayLive + hashtag del vendedor DEL DIRECTO usado (#cardvaultbreaks Ovechkin, #storied Bam, #primetimesportsframing Mobley) + @ebaylive. Repartir entre los directos. Nada de citas falsas, burlas, vida personal/pasado, ni prometer sorteos. Riesgo: rechazan si la página no encaja (válidas: entretenimiento/celebridades/deporte).",
+   "fuente": "https://www.dropbox.com/scl/fo/pc10q0uadji0mt1v1s2pj/AGwkL3hJ9zq4Dat3myvTKnc?rlkey=max0zrbl5ul82lyzvlolgecwu&dl=0",
+   "fuentes_largas": [
+    {
+     "prefijo": "ovechkin",
+     "desde": 3360,
+     "hasta": 6600,
+     "url": "https://www.dropbox.com/scl/fo/pc10q0uadji0mt1v1s2pj/AKjsFSeLdQrZDHFOYRh75x0/cardvaultbreaks/2026-11-20%20LIVE%20WITH%20ALEX%20OVECHKIN%20%5BLv2VM1XYezuMZ6Nb%5D/long-form.mp4?rlkey=max0zrbl5ul82lyzvlolgecwu&dl=1"
+    },
+    {
+     "prefijo": "bam",
+     "desde": 300,
+     "hasta": 4700,
+     "url": "https://www.dropbox.com/scl/fo/pc10q0uadji0mt1v1s2pj/AMNoAlMdlaavcm0uZbVmTL4/storied/2026-11-17%20Bam%20Margera%20LIVE%20with%20STORIED%20Limited-Edition%201999%20Cart%20Capsule%20%5Bk6f46w5IEvEMuHms%5D/long-form.mp4?rlkey=max0zrbl5ul82lyzvlolgecwu&dl=1"
+    }
+   ],
+   "nota_material": "Directos largos: Ovechkin sale en pantalla ~3360-6600 s; Bam ~300-4700 s. Falta añadir el de Evan Mobley.",
+   "duracion": 25,
+   "subtitulos": true,
+   "grupos": {
+    "ovechkin": {
+     "texto_y": 640,
+     "textos": [
+      "Alex Ovechkin is ripping packs on eBay Live",
+      "POV: you're in the stream when Ovechkin shows up",
+      "The NHL's all-time goals leader is opening packs live"
+     ],
+     "captions": [
+      "Alex Ovechkin is ripping packs on eBay Live 🏒 @ebaylive #eBayLive #cardvaultbreaks",
+      "The NHL's all-time goals leader opening packs live 🔥 @ebaylive #eBayLive #cardvaultbreaks",
+      "POV: Ovechkin shows up in the break 😳 @ebaylive #eBayLive #cardvaultbreaks",
+      "Ovechkin on eBay Live with CardVault 🃏 @ebaylive #eBayLive #cardvaultbreaks"
+     ]
+    },
+    "bam": {
+     "texto_y": 220,
+     "textos": [
+      "Nobody told me Bam Margera was on eBay Live",
+      "Bam Margera went live on eBay Live",
+      "Bam Margera's 1999 Cart Capsule drop, live"
+     ],
+     "captions": [
+      "Nobody told me Bam Margera was on eBay Live 😳 @ebaylive #eBayLive #storied",
+      "Bam Margera live with Storied on eBay Live 🛒 @ebaylive #eBayLive #storied",
+      "Bam Margera's limited 1999 Cart Capsule, live 🔥 @ebaylive #eBayLive #storied",
+      "Bam Margera went live on eBay Live 🛹 @ebaylive #eBayLive #storied"
+     ]
+    }
+   },
+   "captions": [],
+   "usados": [
+    "bam_004.mp4",
+    "ovechkin_000.mp4",
+    "bam_011.mp4",
+    "ovechkin_009.mp4",
+    "bam_014.mp4",
+    "ovechkin_016.mp4"
+   ]
   }
  },
  "cola": [
@@ -340,6 +437,102 @@
    "archivo": "clips/InternetGirl-08.mp4",
    "texto": "First US tour, no brakes 🚀 @internetgirlmusic #InternetGirl #SoldOut",
    "estado": "en_stock"
+  },
+  {
+   "id": "Emma-01",
+   "campaña": "Emma",
+   "archivo": "clips/Emma-01.mp4",
+   "texto": "Emma Roberts runs a card break show now 🃏 catch Summer Breaks live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+   "estado": "planificado",
+   "fuente": "81 - Still Shaking at the End.mp4"
+  },
+  {
+   "id": "Emma-02",
+   "campaña": "Emma",
+   "archivo": "clips/Emma-02.mp4",
+   "texto": "Nobody told me Emma Roberts was a card collector 😳 Summer Breaks is live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+   "estado": "en_stock",
+   "fuente": "52 - Cody Loves the Drama.mp4"
+  },
+  {
+   "id": "Emma-03",
+   "campaña": "Emma",
+   "archivo": "clips/Emma-03.mp4",
+   "texto": "Watch Emma Roberts rip cards live on Fanatics Live ✨ @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+   "estado": "en_stock",
+   "fuente": "04 - Ezra to Five in Pack One.mp4"
+  },
+  {
+   "id": "Emma-04",
+   "campaña": "Emma",
+   "archivo": "clips/Emma-04.mp4",
+   "texto": "Emma Roberts runs a card break show now and the pulls are unreal 🔥 @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+   "estado": "en_stock",
+   "fuente": "91 - The Smuggler's Outpost Regret.mp4"
+  },
+  {
+   "id": "Emma-05",
+   "campaña": "Emma",
+   "archivo": "clips/Emma-05.mp4",
+   "texto": "Emma Roberts runs a card break show now 🃏 catch Summer Breaks live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+   "estado": "en_stock",
+   "fuente": "85 - Cody's Handwriting Is Unreadable.mp4"
+  },
+  {
+   "id": "Emma-06",
+   "campaña": "Emma",
+   "archivo": "clips/Emma-06.mp4",
+   "texto": "Emma Roberts runs a card break show now 🃏 catch Summer Breaks live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
+   "estado": "en_stock",
+   "fuente": "45 - Padme First, Red Auto Next.mp4"
+  },
+  {
+   "id": "eBay-01",
+   "campaña": "eBay",
+   "archivo": "clips/eBay-01.mp4",
+   "texto": "Nobody told me Bam Margera was on eBay Live 😳 @ebaylive #eBayLive #storied",
+   "estado": "en_stock",
+   "fuente": "bam_004.mp4"
+  },
+  {
+   "id": "eBay-02",
+   "campaña": "eBay",
+   "archivo": "clips/eBay-02.mp4",
+   "texto": "The NHL's all-time goals leader opening packs live 🔥 @ebaylive #eBayLive #cardvaultbreaks",
+   "estado": "en_stock",
+   "fuente": "ovechkin_000.mp4"
+  },
+  {
+   "id": "eBay-03",
+   "campaña": "eBay",
+   "archivo": "clips/eBay-03.mp4",
+   "texto": "Bam Margera's limited 1999 Cart Capsule, live 🔥 @ebaylive #eBayLive #storied",
+   "estado": "en_stock",
+   "fuente": "bam_011.mp4"
+  },
+  {
+   "id": "eBay-04",
+   "campaña": "eBay",
+   "archivo": "clips/eBay-04.mp4",
+   "texto": "The NHL's all-time goals leader opening packs live 🔥 @ebaylive #eBayLive #cardvaultbreaks",
+   "estado": "en_stock",
+   "fuente": "ovechkin_009.mp4"
+  },
+  {
+   "id": "eBay-05",
+   "campaña": "eBay",
+   "archivo": "clips/eBay-05.mp4",
+   "texto": "Nobody told me Bam Margera was on eBay Live 😳 @ebaylive #eBayLive #storied",
+   "estado": "en_stock",
+   "fuente": "bam_014.mp4"
+  },
+  {
+   "id": "eBay-06",
+   "campaña": "eBay",
+   "archivo": "clips/eBay-06.mp4",
+   "texto": "Ovechkin on eBay Live with CardVault 🃏 @ebaylive #eBayLive #cardvaultbreaks",
+   "estado": "en_stock",
+   "fuente": "ovechkin_016.mp4"
   }
  ],
  "dia": {
@@ -371,9 +564,9 @@
    },
    {
     "ventana": "23:00",
-    "clip_id": null,
-    "campaña": null,
-    "borrador_buffer": null
+    "clip_id": "Emma-01",
+    "campaña": "Emma",
+    "borrador_buffer": "6b072a11f0d53020a1ea1228"
    }
   ]
  },
@@ -436,7 +629,19 @@
    "nombre": "MoorHouse Media Network",
    "id": "d425dd80-81d0-41ca-8d1e-b9a91660fd62",
    "motivo": "descartada por contenido"
+  },
+  {
+   "nombre": "Bruiser Wolf - The Dealer Wins Freestyle",
+   "id": "b5063b46-6922-4227-8da5-f0f4560386ef",
+   "motivo": "sale de la rueda el 25-11 (presupuesto casi agotado)"
   }
  ],
- "nota_antiguas": "Content Rewards (24-11-2026) no muestra ninguna opción para salir de una campaña ni en la ficha ni en la lista. Se quedan en la lista; revisar si aparece la opción."
+ "nota_antiguas": "Content Rewards (24-11-2026) no muestra ninguna opción para salir de una campaña ni en la ficha ni en la lista. Se quedan en la lista; revisar si aparece la opción.",
+ "historial_campañas": [
+  {
+   "campaña": "Bruiser",
+   "fecha": "2026-11-25",
+   "motivo": "Sale de la rueda: 95% del presupuesto gastado (51 $ restantes), a punto de cerrar. Último clip: Bruiser-01 (19:30 del 25-11)."
+  }
+ ]
 }
