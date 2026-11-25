@@ -161,7 +161,11 @@
    "campaña": "Madeon",
    "archivo": "clips/Madeon-01.mp4",
    "texto": "the show is the point 🔊 #madeon #tour",
-   "estado": "planificado"
+   "estado": "publicado",
+   "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7712031098192121127",
+   "publicado": "2026-11-25T08:59:14Z",
+   "limite": "2026-11-25T09:29:14Z",
+   "buffer_post": "6b06a361b6204bca46e0419b"
   },
   {
    "id": "Madeon-02",
