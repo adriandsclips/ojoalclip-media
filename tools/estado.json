@@ -12,7 +12,6 @@
  "org_buffer": "6b05867b83d30e5a5320d5a9",
  "pages_base": "https://adriandsclips.github.io/ojoalclip-media/",
  "activas": [
-  "Madeon",
   "Mumford",
   "InternetGirl",
   "Emma",
@@ -316,7 +315,7 @@
    "campaña": "Mumford",
    "archivo": "clips/Mumford-02.mp4",
    "texto": "Mumford & Sons and Chris Stapleton, one stage 🔥 #mumfordandsons #chrisstapleton #cmas #performance",
-   "estado": "en_stock"
+   "estado": "planificado"
   },
   {
    "id": "Mumford-03",
@@ -408,7 +407,7 @@
    "campaña": "InternetGirl",
    "archivo": "clips/InternetGirl-03.mp4",
    "texto": "The crowd went off 🤯 @internetgirlmusic #InternetGirl #SoldOut",
-   "estado": "en_stock"
+   "estado": "planificado"
   },
   {
    "id": "InternetGirl-04",
@@ -443,20 +442,20 @@
    "campaña": "Emma",
    "archivo": "clips/Emma-01.mp4",
    "texto": "Emma Roberts runs a card break show now 🃏 catch Summer Breaks live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
-   "estado": "publicado",
+   "estado": "entregado",
    "fuente": "81 - Still Shaking at the End.mp4",
    "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7712232144503934241",
    "publicado": "2026-11-25T21:59:21Z",
    "limite": "2026-11-25T22:29:21Z",
    "buffer_post": "6b075a38b8e2338b85675ee6",
-   "nota": "2026-11-25 23:31 cierre: no se pudo comprobar Content Rewards (navegador no disponible). Se deja 'publicado'; la próxima ventana lo verifica en B2."
+   "nota": "26-11: figura en los envíos de Content Rewards (pending)."
   },
   {
    "id": "Emma-02",
    "campaña": "Emma",
    "archivo": "clips/Emma-02.mp4",
    "texto": "Nobody told me Emma Roberts was a card collector 😳 Summer Breaks is live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
-   "estado": "en_stock",
+   "estado": "planificado",
    "fuente": "52 - Cody Loves the Drama.mp4"
   },
   {
@@ -496,7 +495,7 @@
    "campaña": "eBay",
    "archivo": "clips/eBay-01.mp4",
    "texto": "Nobody told me Bam Margera was on eBay Live 😳 @ebaylive #eBayLive #storied",
-   "estado": "en_stock",
+   "estado": "planificado",
    "fuente": "bam_004.mp4"
   },
   {
@@ -541,37 +540,31 @@
   }
  ],
  "dia": {
-  "fecha": "2026-11-25",
+  "fecha": "2026-11-26",
   "plan": [
    {
     "ventana": "10:00",
-    "clip_id": "Madeon-01",
-    "campaña": "Madeon",
-    "borrador_buffer": "6b06a27eb6204bca46dff3e0"
+    "clip_id": "Mumford-02",
+    "campaña": "Mumford",
+    "borrador_buffer": "6b07e3c4aca86124808d1bce"
    },
    {
     "ventana": "13:30",
-    "clip_id": "Mumford-01",
-    "campaña": "Mumford",
-    "borrador_buffer": "6b06a27fc68d7845a4980bae"
+    "clip_id": "InternetGirl-03",
+    "campaña": "InternetGirl",
+    "borrador_buffer": "6b07e3c4aca86124808d1c1a"
    },
    {
     "ventana": "16:30",
-    "clip_id": "InternetGirl-02",
-    "campaña": "InternetGirl",
-    "borrador_buffer": "6b06a280b6204bca46dff520"
+    "clip_id": "Emma-02",
+    "campaña": "Emma",
+    "borrador_buffer": "6b07e3c57cb39d7aa35d2c99"
    },
    {
     "ventana": "19:30",
-    "clip_id": "Bruiser-01",
-    "campaña": "Bruiser",
-    "borrador_buffer": "6b06a280d8874a038c0978a1"
-   },
-   {
-    "ventana": "23:00",
-    "clip_id": "Emma-01",
-    "campaña": "Emma",
-    "borrador_buffer": "6b072a11f0d53020a1ea1228"
+    "clip_id": "eBay-01",
+    "campaña": "eBay",
+    "borrador_buffer": "6b07e3c6aca86124808d1c8b"
    }
   ]
  },
@@ -639,6 +632,11 @@
    "nombre": "Bruiser Wolf - The Dealer Wins Freestyle",
    "id": "b5063b46-6922-4227-8da5-f0f4560386ef",
    "motivo": "sale de la rueda el 25-11 (presupuesto casi agotado)"
+  },
+  {
+   "nombre": "Madeon - Victory Live Tour",
+   "id": "902924ae-4ed2-4449-b843-98318b509331",
+   "motivo": "sale de la rueda el 26-11 (pausada, 100% del presupuesto gastado); Madeon-01 pendiente de decisión de Adrián"
   }
  ],
  "nota_antiguas": "Content Rewards (24-11-2026) no muestra ninguna opción para salir de una campaña ni en la ficha ni en la lista. Se quedan en la lista; revisar si aparece la opción.",
@@ -647,6 +645,11 @@
    "campaña": "Bruiser",
    "fecha": "2026-11-25",
    "motivo": "Sale de la rueda: 95% del presupuesto gastado (51 $ restantes), a punto de cerrar. Último clip: Bruiser-01 (19:30 del 25-11)."
+  },
+  {
+   "campaña": "Madeon",
+   "fecha": "2026-11-26",
+   "motivo": "Sale de la rueda: campaña en pausa (status paused, admisión cerrada por 'hold') con el 100% del presupuesto gastado (4.100 $). Sus 5 clips en_stock (Madeon-02..06) se quedan sin usar."
   }
  ]
 }
