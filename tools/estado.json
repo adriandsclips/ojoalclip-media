@@ -15,7 +15,8 @@
   "Mumford",
   "InternetGirl",
   "Emma",
-  "eBay"
+  "eBay",
+  "KingsCourt"
  ],
  "reservas": [
   {
@@ -33,7 +34,16 @@
   "HardcoreSMP": "cuenta solo Minecraft + voz",
   "theCUBE": "cuentas de tecnología empresarial",
   "Santa Cruz": "página dedicada",
-  "Weeknd/BIIANCO/Ordley/ZHU": "sonido oficial obligatorio"
+  "Weeknd/BIIANCO/Ordley/ZHU": "sonido oficial obligatorio",
+  "Ella Langley x Kameron Marlowe": "audiencia mayoritaria Tier 1 + sonido oficial en clips de 'I Won't'",
+  "Rivet Live": "50% de vistas desde EE. UU. + cuenta de 2 semanas",
+  "Double Coverage x Trick Williams": "50% audiencia de países angloparlantes + nicho deportes",
+  "Organic Tarzan": "audiencia Tier 1-2 (Tier 3 eliminada)",
+  "Al Walser": "sonido oficial obligatorio",
+  "Kitsch/First Press": "40% audiencia T1",
+  "Let Him Mansplain": "brief en Notion no legible y material en frame.io (no Dropbox/Drive)",
+  "Dalibor Cicman": "documento de reglas no enlazado (no se pudo leer completo)",
+  "T Bird": "material solo en YouTube"
  },
  "campañas": {
   "Madeon": {
@@ -620,7 +630,7 @@
    "campaña": "KingsCourt",
    "archivo": "clips/KingsCourt-01.mp4",
    "texto": "\"People price a lot of stuff, sell very little\" 💯 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
-   "estado": "en_stock",
+   "estado": "planificado",
    "fuente": "kc_pricing.mp4"
   },
   {
@@ -690,6 +700,12 @@
     "clip_id": "eBay-01",
     "campaña": "eBay",
     "borrador_buffer": "6b07e3c6aca86124808d1c8b"
+   },
+   {
+    "ventana": "23:00",
+    "clip_id": "KingsCourt-01",
+    "campaña": "KingsCourt",
+    "borrador_buffer": "6b07e6feaca86124808e0d3e"
    }
   ]
  },
@@ -775,6 +791,11 @@
    "campaña": "Madeon",
    "fecha": "2026-11-26",
    "motivo": "Sale de la rueda: campaña en pausa (status paused, admisión cerrada por 'hold') con el 100% del presupuesto gastado (4.100 $). Sus 5 clips en_stock (Madeon-02..06) se quedan sin usar."
+  },
+  {
+   "campaña": "KingsCourt",
+   "fecha": "2026-11-26",
+   "motivo": "Entra en la rueda en lugar de Madeon: campaña abierta que cumple todos los criterios (99 % del presupuesto disponible, 993 $). Unida el 26-11; 6 clips del episodio de Billy Thorpe."
   }
  ]
 }
