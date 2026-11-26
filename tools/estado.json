@@ -498,7 +498,11 @@
       "campaña": "InternetGirl",
       "archivo": "clips/InternetGirl-03.mp4",
       "texto": "The crowd went off 🤯 @internetgirlmusic #InternetGirl #SoldOut",
-      "estado": "planificado"
+      "estado": "publicado",
+      "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7712456556612193569",
+      "publicado": "2026-11-26T12:30:12Z",
+      "limite": "2026-11-26T13:00:12Z",
+      "buffer_post": "6b082651df5112c7649ee6f3"
     },
     {
       "id": "InternetGirl-04",
