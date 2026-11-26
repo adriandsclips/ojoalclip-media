@@ -2,16 +2,15 @@
  "version": 1,
  "zona": "Europe/Madrid",
  "ventanas": [
-  "10:00",
-  "13:30",
   "16:30",
-  "19:30",
   "23:00"
  ],
  "canal_buffer_tiktok": "6b0588bd8541f09ecb893366",
  "org_buffer": "6b05867b83d30e5a5320d5a9",
  "pages_base": "https://adriandsclips.github.io/ojoalclip-media/",
- "activas": [],
+ "activas": [
+  "SourJacks"
+ ],
  "reservas": [
   {
    "clave": "ArzUrus",
@@ -28,6 +27,12 @@
     "tiktok_cuenta_oficial": "@arz.urus: 373 seguidores, último vídeo de ene-2026, vistas 60-2.166 (su canal principal es Instagram).",
     "temas_que_funcionan": "captions tipo 'millonario', coches y lujo, dinero; indicio de público español: emojis 🇪🇸 y referencias a España (indicio, no dato)."
    }
+  },
+  {
+   "clave": "WaChaa",
+   "nombre": "Wa-Chaa x The RZA - Grandmaster Collection Clipping",
+   "id": "eb28f557-df7b-4245-8603-01380c4d84cc",
+   "nota": "PENDIENTE: material solo en frame.io (no automatizado) y 87 % gastado a 26-11. España paga 2 $/1k (resto del mundo); mínimo 1.000 vistas; audiencia mayoritaria Tier 1-2."
   }
  ],
  "descartadas": {
@@ -350,6 +355,55 @@
     "kc_sponsor.mp4",
     "kc_fiverr.mp4",
     "kc_reels.mp4"
+   ]
+  },
+  "SourJacks": {
+   "nombre": "Clip JasonTheWeen",
+   "id": "8704ed08-fbc9-4055-8216-47b71ee70503",
+   "pago_cpm": 4.0,
+   "idioma": "en",
+   "minimo_vistas": 1000,
+   "minimo_pago_usd": 4.0,
+   "maximo_pago_usd": 1000.0,
+   "interaccion_minima": 0.0075,
+   "paises": "no especificado en el brief (sin requisito de país; sin tarifa por país)",
+   "reglas": "JasonTheWeen x SourJacks (SourJacks Showdown). #SourJacksPartner como PRIMER hashtag y mencionar SourJacks en la caption. Interacción mínima 0,75 % (likes+comentarios / vistas). Sin música sin licencia (no añadimos música). No mencionar otras marcas (evitar escenas donde se nombran juegos/marcas). No clickbait ni captions engañosas; no burlarse de SourJacks, presentador, concursantes ni marcas. Cuenta relevante: entretenimiento/creadores/memes/streamers; sin contenido explícito. No repetir el mismo clip; se pueden combinar momentos. FTC: #SourJacksPartner como divulgación. Pago 4 $/1k, mínimo 4 $ (1.000 vistas), máximo 1.000 $/clip. Varios clips por cuenta permitidos si son escenas distintas.",
+   "fuente": "https://drive.google.com/drive/folders/1h1lBt23gKjw8f7hIKnLM9uWJgKZLr_4_",
+   "fuente_reserva": "https://drive.google.com/drive/folders/11mHOnsfpIHClKvH2sggcjjYAhbfE3ClZ (episodios completos 201-503)",
+   "nota_material": "Carpeta 'NEW content': 8 cortes verticales 1080x1920 de ~2 min (un concursante por corte, con rótulos y temporizador propios). El texto de gancho solo se muestra los primeros 3 s para no tapar los rótulos del programa. Sin emojis en el texto en pantalla (la fuente no los dibuja).",
+   "texto_y": 480,
+   "texto_seg": 3.0,
+   "subtitulos": true,
+   "captions": [],
+   "usados": [],
+   "analisis": "26-11: 23 clips de cuentas de 0-862 seguidores (23-26 nov, página #sourjackspartner): mediana 609 vistas; 8/23 >= 1.000; 5 de ellos además >= 0,75 % interacción; top-5 = 87 % de las vistas (muestra sesgada a populares). Formatos que funcionan: momento completo del concurso con algo en juego y desenlace (comer cosas raras, impostor, contrarreloj), gancho en pregunta.",
+   "analisis_fuente": "TikTok tag #sourjackspartner",
+   "escenas_usadas": [
+    [
+     "1.mp4",
+     56.6,
+     77.0
+    ],
+    [
+     "2.mp4",
+     41.4,
+     73.2
+    ],
+    [
+     "4.mp4",
+     75.9,
+     92.7
+    ],
+    [
+     "8.mp4",
+     54.7,
+     92.4
+    ],
+    [
+     "7.mp4",
+     16.8,
+     35.6
+    ]
    ]
   }
  },
@@ -701,43 +755,89 @@
    "texto": "The 'just document everything' advice, tested in real life 📱 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
    "estado": "en_stock",
    "fuente": "kc_reels.mp4"
+  },
+  {
+   "id": "SourJacks-01",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-01.mp4",
+   "texto": "#SourJacksPartner Splink landed on broccoli soup with SourJacks... then the wheel gave him DOUBLE 😭 would you eat it? #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "1.mp4",
+   "escena": [
+    56.6,
+    77.0
+   ],
+   "duracion": 20.4,
+   "texto_pantalla": "He has to eat whatever the wheel lands on... again"
+  },
+  {
+   "id": "SourJacks-02",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-02.mp4",
+   "texto": "#SourJacksPartner Jalon says she needs the $25K, so she eats whatever the SourJacks wheel picks 😭 which one would you skip? #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "2.mp4",
+   "escena": [
+    41.4,
+    73.2
+   ],
+   "duracion": 31.8,
+   "texto_pantalla": "She needs the $25,000... but first she has to eat this"
+  },
+  {
+   "id": "SourJacks-03",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-03.mp4",
+   "texto": "#SourJacksPartner Miss Chimchim landed on sardines on SourJacks Showdown and the host made it count 😭 could you eat it? #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "4.mp4",
+   "escena": [
+    75.9,
+    92.7
+   ],
+   "duracion": 16.8,
+   "texto_pantalla": "The wheel landed on sardines... and she has to eat it"
+  },
+  {
+   "id": "SourJacks-04",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-04.mp4",
+   "texto": "#SourJacksPartner Splink just speedran the SourJacks Showdown gaming gauntlet without dropping the bag 🏃‍♂️ fastest time of the episode? #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "8.mp4",
+   "escena": [
+    54.7,
+    92.4
+   ],
+   "duracion": 37.7,
+   "texto_pantalla": "Fastest time wins the episode. Watch Splink go"
+  },
+  {
+   "id": "SourJacks-05",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-05.mp4",
+   "texto": "#SourJacksPartner A2 Guapo digging for the golden bag on SourJacks Showdown... then he says he's color blind 😭 #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "7.mp4",
+   "escena": [
+    16.8,
+    35.6
+   ],
+   "duracion": 18.8,
+   "texto_pantalla": "Find the golden bag before the clock runs out"
   }
  ],
  "dia": {
   "fecha": "2026-11-26",
+  "nota": "Rueda nueva desde las 18:xx: solo queda la ventana de las 23:00.",
   "plan": [
    {
-    "ventana": "10:00",
-    "clip_id": "Mumford-02",
-    "campaña": "Mumford",
-    "borrador_buffer": "6b07e3c4aca86124808d1bce"
-   },
-   {
-    "ventana": "13:30",
-    "clip_id": "InternetGirl-03",
-    "campaña": "InternetGirl",
-    "borrador_buffer": "6b07e3c4aca86124808d1c1a"
-   },
-   {
-    "ventana": "16:30",
-    "clip_id": "Emma-02",
-    "campaña": "Emma",
-    "borrador_buffer": "6b07e3c57cb39d7aa35d2c99"
-   },
-   {
-    "ventana": "19:30",
-    "clip_id": null,
-    "campaña": null,
-    "nota": "hueco: eBay-01 cancelado (campaña retirada por idioma)"
-   },
-   {
     "ventana": "23:00",
-    "clip_id": null,
-    "campaña": null,
-    "nota": "hueco: KingsCourt-01 cancelado (campaña retirada por idioma)"
+    "clip_id": "SourJacks-01",
+    "campaña": "SourJacks",
+    "borrador_buffer": null
    }
-  ],
-  "nota": "26-11: desde las 17:40 rige el criterio Español y España; 19:30 y 23:00 sin clip (huecos)."
+  ]
  },
  "historial": [
   {
@@ -876,8 +976,19 @@
    "campaña": "KingsCourt",
    "fecha": "2026-11-26",
    "motivo": "Sale de la rueda por el nuevo criterio (solo audio en español con potencial en España): Audio en inglés (podcast de ecommerce de The Gap King). Se cancelan solo sus publicaciones futuras."
+  },
+  {
+   "campaña": "SourJacks",
+   "fecha": "2026-11-26",
+   "motivo": "Entra en la rueda (prioridad): Clip JasonTheWeen (SourJacks). 4 $/1k, mínimo 1.000 vistas, interacción 0,75 %, sin requisito de país, material en Drive, publicación por Buffer. 5 cortes por escenas."
   }
  ],
- "criterio": "Desde el 26-11-2026: solo campañas con audio original en español y con visualizaciones de España válidas para el pago; ver tools/AUTOMATIZACION.md",
- "rendimiento": []
+ "criterio": "Desde el 26-11-2026 (tarde): campañas en inglés y español; 2 publicaciones diarias (16:30 y 23:00); prioridad SourJacks; ver tools/AUTOMATIZACION.md (Criterio de campañas, Montaje por escenas, Seguimiento a 72 h).",
+ "rendimiento": [],
+ "prueba": {
+  "inicio": "2026-11-26",
+  "ventanas": 2,
+  "objetivo_revision": 10,
+  "condicion_subir_a_3": "≥3 clips con todos los mínimos (vistas e interacción) y ≥1 envío aprobado; solo proponer"
+ }
 }

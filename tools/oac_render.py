@@ -51,7 +51,7 @@ def cropdetect(src, ss, dur):
     return c
 
 
-def text_ass(path, line, total, y=300):
+def text_ass(path, line, total, y=300, secs=None):
     words = line.split()
     # parte la frase en 2 líneas si es larga
     if len(line) > 26 and len(words) > 3:
@@ -63,7 +63,7 @@ def text_ass(path, line, total, y=300):
                 best = i + 1
                 break
         line = " ".join(words[:best]) + "\\N" + " ".join(words[best:])
-    end = total + 1
+    end = min(total + 1, secs) if secs else total + 1
     ev = (f"Dialogue: 0,0:00:00.00,0:{int(end // 60):02d}:{end % 60:05.2f},Top,,0,0,0,,"
           f"{{\\pos(540,{y})}}{line}")
     Path(path).write_text("""[Script Info]
@@ -86,7 +86,7 @@ def ffesc(p):
 
 
 def render(src, out, ss, dur, text=None, watermark=None, wm_opacity=0.10, subs_ass=None, seed=0,
-           text_y=300, crf=22, wm_w=300, wm_xy="40:60"):
+           text_y=300, crf=22, wm_w=300, wm_xy="40:60", text_secs=None):
     src, out = Path(src), Path(out)
     rng = random.Random(seed)
     w, h, _ = probe(src)
@@ -118,7 +118,7 @@ def render(src, out, ss, dur, text=None, watermark=None, wm_opacity=0.10, subs_a
     tmp_ass = None
     if text:
         tmp_ass = out.with_suffix(".top.ass")
-        text_ass(tmp_ass, text, dur, y=text_y)
+        text_ass(tmp_ass, text, dur, y=text_y, secs=text_secs)
         g += f";{last}subtitles=filename='{ffesc(tmp_ass)}'[v2]"
         last = "[v2]"
     if subs_ass:

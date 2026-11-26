@@ -6,44 +6,64 @@ Cuenta de TikTok: @ojo.al.clip. Zona horaria: Europe/Madrid.
 ## Reglas fijas (no negociables)
 - **Nunca** confirmes las reglas ni pulses "Enviar clip" en Content Rewards: eso lo hace Adrián. Tú solo publicas, avisas y compruebas.
 - No uses herramientas de pago. No toques la bio ni el nombre de la cuenta.
-- Un clip por ventana; nunca dos clips de la misma campaña el mismo día.
-- **La rueda (5 comensales)**: objetivo **5 campañas activas** y las **5 ventanas llenas**, una campaña distinta en
-  cada una, **todas cumpliendo el criterio "Español y España"** (abajo). Cuando una campaña ya no puede darnos más
-  dinero o rinde peor que una candidata mejor respaldada, sale y entra la mejor candidata. Si no hay campañas que
-  cumplan el criterio, la ventana **se queda vacía** y se avisa a Adrián; nunca se rellena con una que no cumpla.
-- Ventanas: 10:00, 13:30, 16:30, 19:30, 23:00 (hora de Madrid).
+- Un clip por ventana. **Dos ventanas al día: 16:30 y 23:00** (hora peninsular). Una misma campaña puede ocupar las
+  dos ventanas del día si sus reglas lo permiten y los dos cortes son **escenas realmente distintas** (otro momento,
+  otro concursante u otra prueba; nunca el mismo momento recortado de otra forma).
+- **La rueda**: objetivo **2 publicaciones diarias**. Las campañas activas (`activas`) se ordenan por prioridad; las
+  ventanas se rellenan con la primera que tenga un corte válido en stock. Si una campaña se agota o deja de encajar,
+  sale y se busca sustituta automáticamente (A2). Si solo hay un corte que cumpla las reglas y merezca publicarse, se
+  usa esa ventana y la otra queda vacía mientras se sigue buscando (se avisa en el resumen).
+- **Prueba en curso (desde el 26-11-2026)**: se mantienen 2 publicaciones diarias. Cuando haya **10 clips con datos a
+  72 h**, se revisa qué campañas y formatos funcionan. Solo se **propone** a Adrián subir a 3 ventanas si al menos 3
+  clips han cumplido todos los mínimos de su campaña (vistas e interacción) **y** hay algún envío aprobado. No subas a
+  3 sin su confirmación.
 - Si algo no se puede verificar, **no borres nada**: avisa a Adrián y deja el estado como está.
 - Todo el estado vive en `tools/estado.json` de este repositorio. Haz siempre `git pull --rebase` antes de `git push`.
 
-## Criterio de campañas: ESPAÑOL Y ESPAÑA (obligatorio desde el 26-11-2026)
-Una campaña solo puede estar en la rueda si cumple **todo** esto:
-1. **Audio original de los clips en español.** Una campaña en inglés (u otro idioma) queda fuera aunque permita
-   subtítulos o captions en español. Una campaña de Latinoamérica vale si su contenido encaja con el público de España.
-2. **Las visualizaciones de España cuentan para el pago.** Fuera si exige audiencia mayoritaria de otro país/región
-   (US, Tier 1 sin incluir España, "solo México", "audiencia francesa"...) o si su tarifa por país excluye España.
-   Si el brief no dice nada de países, cuenta como admitida, pero anótalo como "no especificado".
-3. **Requisitos de siempre:** TikTok, sin preaprobación, sin página dedicada ni link/mención en bio, sin mínimo de
-   seguidores ni antigüedad, sin sonido oficial obligatorio, material descargable (Dropbox/Drive) y nuestro formato de
-   edición (corte 9:16 con fondo desenfocado, texto arriba, subtítulos, audio original) cumple sus reglas.
-4. **Datos de la campaña:** plazo, presupuesto restante y mínimo de vistas para cobrar (cuando existan). Nunca una a
-   punto de cerrar (≥ 90 % gastado, < 150 $ o fin en ≤ 5 días).
-5. **Potencial en España, con datos.** Antes de meterla, analiza vídeos recientes del creador y clips comparables en
-   TikTok (en la pestaña de tiktok.com: `/api/post/item_list` o la página del vídeo como en "Comprobar un vídeo"):
-   vistas de varios clips recientes, **mediana** si hay muestra suficiente, cuántos superan el mínimo de la campaña y si
-   las vistas vienen de un único viral; señales de interés en España (porcentaje de audiencia de España si está
-   disponible; si solo hay indicios, como comentarios con referencias locales, márcalos como indicios); qué temas,
-   momentos y formatos funcionan repetidamente (priorizar lo que se entiende en 2 s sin conocer al creador); y los
-   datos de nuestra cuenta en publicaciones comparables (vistas a 24 h, tiempo medio, % que termina, audiencia España).
-   **No inventes cifras**: si un dato no está, dilo. Con poca evidencia, la campaña entra como **"candidata a prueba"**
-   explicando en qué te basas.
-6. **Orden:** primero potencial de visitas en España y de alcanzar el mínimo de pago; la tarifa solo desempata.
-Si no hay 5 que cumplan, **se dejan huecos** (no se rellenan con campañas que no cumplan) y se sigue buscando cada día.
+## Criterio de campañas (desde el 26-11-2026; sustituye al filtro de solo español)
+Se admiten campañas en **inglés y en español**. Una campaña entra en la rueda solo si cumple **todo** esto:
+1. **Publicación y envío automatizables con lo que tenemos**: TikTok; sin preaprobación; sin página dedicada, nombre
+   de usuario ni bio/enlace en bio; sin sonido oficial obligatorio (Buffer no puede añadirlo); sin etiqueta de
+   colaboración pagada ni comentario fijado obligatorio; sin mínimo de seguidores/antigüedad que no cumplamos; material
+   descargable de Dropbox o Google Drive. La cuenta (entretenimiento/clips general, sin contenido explícito) debe
+   encajar en el tipo de página que pide la campaña.
+2. **Qué vistas cuentan**: si exige audiencia mayoritaria de un país/región (US, Tier 1...) que no podemos acreditar,
+   queda fuera. Si tiene tarifa por país (`configuration.geoRates`), las vistas del resto del mundo deben pagar > 0.
+3. **Datos de pago**: tarifa, mínimo por clip (`minPayout / rate * 1000` = vistas para cobrar), tope, mínimo de
+   interacción si existe, presupuesto restante y plazo. Nunca una a punto de cerrar (≥ 90 % gastado, < 150 $ o fin en
+   ≤ 5 días).
+4. **Nuestro montaje cumple sus reglas** (hashtags, descripción, música, texto en pantalla, duración, marcas).
+5. **Evidencia de que el mínimo se alcanza**: prioridad a las campañas cuyo mínimo de pago alcanzan con cierta
+   regularidad otros clippers **pequeños** (cuentas de < 1.000 seguidores) en clips recientes: mira la página del
+   hashtag obligatorio o del creador en TikTok, anota vistas, mediana, cuántos superan el mínimo y cuántos cumplen
+   además la interacción. Avisa de que la página del hashtag sesga hacia lo popular. **No inventes cifras.**
+6. **Orden**: primero la probabilidad de alcanzar el mínimo (evidencia del punto 5 y umbral bajo), luego el presupuesto
+   restante, y la tarifa como desempate.
+**Prioridad actual: SourJacks** ("Clip JasonTheWeen", ficha `SourJacks`).
 
-### Seguimiento diario de rendimiento
-Cada mañana compara los clips publicados **a igual tiempo desde su publicación** (p. ej. vistas a 24 h) por campaña,
-guardando en `rendimiento` del estado las cifras vistas (`{clip_id, horas, vistas}`). Si una campaña acumula varios
-clips (≥ 3) con peor rendimiento que las demás y hay una candidata mejor respaldada por datos, sustitúyela. Igual
-cuando una campaña caduque, agote presupuesto o lleguemos al máximo permitido.
+## Montaje por escenas (obligatorio para clips nuevos)
+Herramienta: `tools/escenas.py` (ver su cabecera). Flujo:
+1. `python3 tools/escenas.py transcribir <Campaña>` → transcripción con tiempos de todo el material.
+2. Elige escenas leyendo la transcripción **y mirando fotogramas** (`ffmpeg -ss T -i fuente -frames:v 1 -vf scale=270:-1 x.png`
+   y léelos): una escena que se entienda sola, que **empiece con la acción o con una frase que dé contexto desde el
+   primer segundo** y que **conserve el desenlace**. Duración la de la escena (sin relleno), dentro de las reglas.
+   Evita tramos donde se nombren otras marcas si la campaña lo prohíbe. No repitas escenas (`campañas[c].escenas_usadas`).
+3. `python3 tools/escenas.py cortar <Campaña> <archivo> <inicio> <fin> "<texto pantalla>" "<caption>"`: subtítulos en
+   el idioma original (`campañas[c].idioma`), texto de gancho arriba (sin emojis; `texto_seg` lo limita a los
+   primeros segundos si el material ya trae rótulos), caption con los hashtags/menciones exigidos en el orden exigido,
+   sin música añadida salvo que la campaña la permita.
+4. Revisa 2-3 fotogramas del clip final antes de planificarlo.
+`make_stock.py` (ventana de más energía) queda solo como último recurso.
+
+## Seguimiento a 72 h (registro de la prueba)
+En `estado.rendimiento` guarda, para cada clip publicado cuando cumpla 72 h (±12 h): `{clip_id, campaña, formato
+(escena/tema), publicado, medido, horas, vistas, likes, comentarios, compartidos, interaccion = (likes+comentarios)/
+vistas, cumple_vistas, cumple_interaccion, envio_estado (status/reviewStatus de Content Rewards), aprobado, pagado}`.
+Datos de vistas/likes/comentarios: página del vídeo en TikTok ("Comprobar un vídeo", `stats`). Estado del envío: la
+consulta de envíos de Content Rewards. "Cumple mínimos" (vistas e interacción) y "aprobado/pagado" se anotan **por
+separado**. Si un dato no está, déjalo en `null`; no lo inventes.
+Cuando haya 10 clips con datos a 72 h, el resumen de la mañana incluye la revisión (qué campañas y escenas funcionan)
+y, si se cumple la condición de "Prueba en curso", la propuesta de pasar a 3 ventanas.
 Al retirar una campaña: cancela solo sus publicaciones futuras (borradores del plan); conserva clips publicados,
 envíos en revisión y cobros pendientes (pasa a `antiguas`).
 
@@ -97,26 +117,25 @@ Campaña: https://contentrewards.com/c/campaigns/<id>
    gastado, menos de 150 $ restantes o fecha de fin en ≤ 5 días). Quítala de `activas` y apúntalo en
    `historial_campañas` con el motivo (si el límite es temporal, guarda `campañas[c].pausa_hasta`); pasa a `antiguas`.
    Sus clips `en_stock` se quedan sin usar.
-   **Rellenar hasta 5**: usa primero una reserva de `reservas` que cumpla el criterio "Español y España" (sin `nota`
-   de pendiente); si no hay, busca en `/api/campaign/campaigns/discover?collapseGroups=false&limit=50&view=summary`
-   (pagina con `cursor`) campañas con audio en español y aplica el criterio completo, incluido el análisis de datos en
-   TikTok. Lee el brief/documento de reglas **completo**, únete ("Unirse a la campaña") y crea su ficha en `campañas`
-   (nombre, id, pago_cpm, reglas, fuente, idioma, paises, minimo_vistas, plazo, `analisis` con los datos y su fuente,
-   `prueba: true` si es candidata a prueba, textos en pantalla y captions que cumplan lo exigido). Fabrica stock con
-   `make_stock.py` antes de planificarla. Guarda en `reservas` las siguientes mejores con sus datos.
-   Si quedan huecos, déjalos en el plan como `{ventana, clip_id: null, campaña: null, nota: "hueco"}` y avisa.
+   **Rellenar**: si no hay ninguna campaña activa con cortes válidos para las 2 ventanas, usa una reserva de
+   `reservas` que cumpla el "Criterio de campañas" o busca en
+   `/api/campaign/campaigns/discover?collapseGroups=false&limit=50&view=summary` (pagina con `cursor`) y aplica el
+   criterio completo, incluida la evidencia de clippers pequeños. Lee el brief **completo**, únete ("Unirse a la
+   campaña"), crea su ficha en `campañas` (nombre, id, pago_cpm, idioma, minimo_vistas, minimo_pago_usd,
+   maximo_pago_usd, interaccion_minima, paises, reglas, fuente, analisis con datos y fuente, texto_y/texto_seg) y
+   produce cortes por escenas antes de planificarla. Guarda en `reservas` las siguientes mejores con sus datos.
 3. **Plan del día** (`estado.dia`): una entrada por ventana con `{ventana, clip_id, campaña, borrador_buffer}`.
    - Si hay un clip con estado `recuperar`, va en la **primera ventana** del día.
-   - Reparte las campañas activas de forma que cada una salga como mucho una vez ese día y no repita la misma ventana
-     del día anterior. Las 5 ventanas deben quedar llenas (5 campañas distintas).
-   - Para cada ventana coge el clip `en_stock` más antiguo de esa campaña.
+   - Ventanas 16:30 y 23:00. Rellena por orden de `activas` (prioridad) con el clip `en_stock` más antiguo; puede ser
+     la misma campaña en las dos ventanas si son escenas distintas. Si una ventana no tiene corte válido, déjala como
+     `{ventana, clip_id: null, campaña: null, nota: "hueco"}` y sigue buscando.
 4. Para cada clip del plan crea un **borrador** en Buffer: `create_post` con `channelId`, `schedulingType: "automatic"`,
    `saveToDraft: true`, `text` = el texto del clip, `assets: [{video:{url: pages_base + archivo}}]` y
    `metadata: {tiktok:{isAiGenerated:false}}`. Guarda el id en `borrador_buffer` y marca el clip como `planificado`.
    Si Buffer dice "Video could not be read", comprueba que la URL de GitHub Pages responde y reinténtalo una vez.
-5. **Reposición**: si alguna campaña activa tiene menos de 4 clips `en_stock`, ejecuta
-   `python3 tools/make_stock.py <Campaña> 6` (necesita `pip install --break-system-packages gdown faster-whisper` solo si
-   faltan). Si imprime `MATERIAL_AGOTADO`, avisa a Adrián y busca una campaña nueva para sustituirla cuando se acabe.
+5. **Reposición**: si entre todas las campañas activas hay menos de 4 clips `en_stock`, produce cortes nuevos con el
+   "Montaje por escenas" (necesita `pip install --break-system-packages gdown faster-whisper` solo si faltan). Si no
+   quedan escenas válidas en el material, avisa a Adrián y busca otra campaña.
 6. **Limpieza (solo los lunes)**: borra de `clips/` los archivos de clips ya publicados hace más de 2 días. Después,
    aplana el historial para que el repositorio no crezca:
    `git checkout --orphan nuevo && git add -A && git commit -m "Limpieza semanal" && git branch -D main && git branch -m main && git push -f origin main`.
@@ -129,26 +148,26 @@ Campaña: https://contentrewards.com/c/campaigns/<id>
    y cuenta cuántos hay aceptados, pendientes/en seguimiento y rechazados (`status`, `reviewStatus`), con las vistas de
    cada uno (`socialMediaPost.views`). Señala los cambios desde ayer (nuevos aceptados o rechazados, con el motivo si lo
    hay) y los clips con 0 vistas tras más de 24 h.
-   Con esas vistas aplica el "Seguimiento diario de rendimiento" (comparar a igual tiempo publicado y sustituir si toca).
+   Después aplica el "Seguimiento a 72 h" (registro de los clips que cumplen 72 h y revisión al llegar a 10).
 10. Resumen final breve: las ventanas del día con su campaña, el estado de los envíos (aceptados / pendientes /
    rechazados y vistas) y avisos (stock bajo, campañas sustituidas, huecos).
 
-## B) VENTANA (unos minutos antes de cada hora: 9:58, 13:28, 16:28, 19:28, 22:58)
-1. Preparación común. Calcula la ventana: la más cercana de 10:00, 13:30, 16:30, 19:30 o 23:00.
+## B) VENTANA (16:28 y 22:58)
+1. Preparación común. Calcula la ventana: la más cercana de 16:30 o 23:00.
 2. **Plazos vencidos** (antes de nada): para cada clip `publicado` cuyo plazo (`limite`) ya pasó:
    - Si figura en los envíos de Content Rewards, márcalo `entregado`.
    - Si no figura, comprueba que la campaña sigue activa y admite clips, y que sus reglas permiten volver a publicar el
      clip. Si todo se cumple, **borra solo ese vídeo** en TikTok: abre la página del vídeo en el navegador integrado,
      menú "..." → "Eliminar" → confirmar, y verifica después que la página ya no lo muestra. Luego pon el clip en
      `recuperar` y vuelve a la cola con el **mismo archivo**: tiene prioridad en esta ventana; el clip que tocaba ahora
-     pasa a la siguiente ventana y el resto se desplaza en orden (después de las 23:00 viene las 10:00 del día
-     siguiente). Evita que el desplazamiento junte dos clips de la misma campaña el mismo día: si pasa, deja el de esa
-     campaña para el día siguiente.
+     pasa a la siguiente ventana y el resto se desplaza en orden (después de las 23:00 viene las 16:30 del día
+     siguiente).
    - Si no puedes verificar que no se envió, o si se puede volver a publicar, **no borres**: avisa a Adrián.
 3. Busca en `estado.dia` el clip de esta ventana. Si no hay ninguno, termina sin aviso.
 4. Comprueba que su campaña sigue activa y admite clips. Si no, sácala de la rueda (como en A2) y usa el siguiente clip
-   disponible de una campaña activa que no haya salido hoy (crea su borrador como en A4), y anótalo. Si no queda
-   ninguna, mete una campaña nueva siguiendo A2 (criterio "Español y España") si da tiempo; si no, deja el hueco y avisa.
+   `en_stock` de otra campaña activa (escena distinta a la de la otra ventana del día; crea su borrador como en A4), y
+   anótalo. Si no queda ninguno, mete una campaña nueva siguiendo A2 (Criterio de campañas) si da tiempo; si no, deja
+   el hueco y avisa.
 5. **Publica**: `create_post` con `channelId`, `schedulingType: "automatic"`, `draftId` = `borrador_buffer`,
    `mode: "shareNow"`, el mismo `text` y los mismos `assets`. Después llama a `get_post` cada 30 s (máximo 15 min)
    hasta que `status` sea `sent` y aparezca `externalLink`. Si sale `error`, avisa a Adrián con el mensaje.
