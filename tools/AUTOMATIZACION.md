@@ -97,7 +97,12 @@ Campaña: https://contentrewards.com/c/campaigns/<id>
    permite salir conservando el historial y los pagos (compruébalo antes en su ayuda), sal de ella. Si no puedes
    comprobarlo, no salgas: díselo a Adrián.
 8. Commit y push del estado ("Plan del día AAAA-MM-DD").
-9. Resumen final breve: las ventanas del día con su campaña, avisos (stock bajo, campañas sustituidas, huecos).
+9. **Estado de los envíos**: consulta todos los envíos (`/api/submission/submissions?creatorView=true&limit=50`, paginando)
+   y cuenta cuántos hay aceptados, pendientes/en seguimiento y rechazados (`status`, `reviewStatus`), con las vistas de
+   cada uno (`socialMediaPost.views`). Señala los cambios desde ayer (nuevos aceptados o rechazados, con el motivo si lo
+   hay) y los clips con 0 vistas tras más de 24 h.
+10. Resumen final breve: las ventanas del día con su campaña, el estado de los envíos (aceptados / pendientes /
+   rechazados y vistas) y avisos (stock bajo, campañas sustituidas, huecos).
 
 ## B) VENTANA (unos minutos antes de cada hora: 9:58, 13:28, 16:28, 19:28, 22:58)
 1. Preparación común. Calcula la ventana: la más cercana de 10:00, 13:30, 16:30, 19:30 o 23:00.
