@@ -86,7 +86,7 @@ def ffesc(p):
 
 
 def render(src, out, ss, dur, text=None, watermark=None, wm_opacity=0.10, subs_ass=None, seed=0,
-           text_y=300, crf=22):
+           text_y=300, crf=22, wm_w=300, wm_xy="40:60"):
     src, out = Path(src), Path(out)
     rng = random.Random(seed)
     w, h, _ = probe(src)
@@ -112,8 +112,8 @@ def render(src, out, ss, dur, text=None, watermark=None, wm_opacity=0.10, subs_a
     inputs = ["-ss", f"{ss:.3f}", "-t", f"{dur:.3f}", "-i", str(src)]
     if watermark:
         inputs += ["-i", str(watermark)]
-        g += (f";[1:v]scale=300:-1,format=rgba,colorchannelmixer=aa={wm_opacity:.2f}[wm];"
-              f"{last}[wm]overlay=40:60[v1]")
+        g += (f";[1:v]scale={wm_w}:-1,format=rgba,colorchannelmixer=aa={wm_opacity:.2f}[wm];"
+              f"{last}[wm]overlay={wm_xy}[v1]")
         last = "[v1]"
     tmp_ass = None
     if text:

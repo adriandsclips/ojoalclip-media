@@ -143,7 +143,7 @@ def main(camp, n):
         if d < 9:
             continue
         win = C.get("duracion", 15)
-        ss, dur = (0.0, min(d, 30.0)) if d <= win + 3 else (best_window(f, d, win), win)
+        ss, dur = (0.0, min(d, C.get("max_dur", 30.0))) if d <= win + 3 else (best_window(f, d, win), win)
         k += 1
         cid = f"{camp}-{k:02d}"
         out = ROOT / "clips" / f"{cid}.mp4"
@@ -151,7 +151,9 @@ def main(camp, n):
         texts = G.get("textos") or [""]
         caps = G["captions"] if isinstance(G["captions"], list) else list(G["captions"].values())
         subs = subs_ass(f, ss, dur, out.with_suffix(".subs.ass")) if C.get("subtitulos") else None
-        render(f, out, ss, dur, text=random.choice(texts) or None, seed=k, text_y=G.get("texto_y", C.get("texto_y", 300)), subs_ass=subs)
+        M = C.get("marca") or {}
+        render(f, out, ss, dur, text=random.choice(texts) or None, seed=k, text_y=G.get("texto_y", C.get("texto_y", 300)), subs_ass=subs,
+               watermark=(ROOT / M["archivo"]) if M else None, wm_opacity=M.get("opacidad", 0.10), wm_w=M.get("ancho", 300), wm_xy=M.get("pos", "40:60"))
         if subs:
             Path(subs).unlink(missing_ok=True)
         est["cola"].append({"id": cid, "campaña": camp, "archivo": f"clips/{cid}.mp4",

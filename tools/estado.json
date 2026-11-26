@@ -249,6 +249,83 @@
     "bam_014.mp4",
     "ovechkin_016.mp4"
    ]
+  },
+  "KingsCourt": {
+   "nombre": "The King’s Court Clipping",
+   "id": "deedd716-c906-4905-a830-cc48913e3c24",
+   "pago_cpm": 1.0,
+   "reglas": "Campaña abierta (sin preaprobación, sin página dedicada ni bio, sin mínimo de seguidores ni restricción de país). Podcast de ecommerce/emprendimiento de The Gap King: solo material de su Drive (vídeo completo por invitado + transcript + Key Moments). Clip editado de 15 s o más (ideal 15-45), un solo momento, gancho en 1-3 s, subtítulos legibles, sin cambiar el sentido de lo dicho ni inventar citas, sin IA, sin forzar publicidad. Footer persistente y discreto YOUTUBE.COM/@THEGAPKING en todos los clips (marca de la campaña). Caption con @TheGapKing1 en TikTok. Pago $1/1k, mínimo $5 y máximo $100 por clip.",
+   "fuente": "https://drive.google.com/drive/folders/1KPc0Nn-cltYHRnHXVoJfB4PrQs1s7Hi4",
+   "nota_material": "Episodios en subcarpetas por invitado (01 Billy Thorpe … 09 Polly). Material preparado a mano en /tmp/oac_src/KingsCourt: cortes kc_<momento>.mp4 del episodio de Billy Thorpe (Drive 10TM3Rx5tiH8-emLR-RnIMla66cpDn9Pj) en los Key Moments, cortados en frase completa. Para reponer: bajar otro episodio con gdown, cortar momentos de su 'Start Here' y añadir grupos.",
+   "duracion": 45,
+   "max_dur": 45,
+   "subtitulos": true,
+   "texto_y": 300,
+   "marca": {
+    "archivo": "tools/marcas/thegapking_footer.png",
+    "opacidad": 0.85,
+    "ancho": 700,
+    "pos": "190:1835"
+   },
+   "grupos": {
+    "kc_sponsor": {
+     "textos": [
+      "He got a $10,400 sponsorship with 400 downloads"
+     ],
+     "captions": [
+      "They said 400 downloads would never land a sponsor. He signed $10,400 🤯 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business"
+     ]
+    },
+    "kc_fiverr": {
+     "textos": [
+      "\"I'll make $10K before you finish that course\""
+     ],
+     "captions": [
+      "He bet his friend he'd make $10K on Fiverr before the course was done 😂 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business"
+     ]
+    },
+    "kc_pricing": {
+     "textos": [
+      "Why he doesn't sell $10,000 videos"
+     ],
+     "captions": [
+      "\"People price a lot of stuff, sell very little\" 💯 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business"
+     ]
+    },
+    "kc_reels": {
+     "textos": [
+      "He tried to post 100 reels in one day"
+     ],
+     "captions": [
+      "The 'just document everything' advice, tested in real life 📱 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business"
+     ]
+    },
+    "kc_skills": {
+     "textos": [
+      "If Amazon disappears tomorrow, he's still in business"
+     ],
+     "captions": [
+      "The platform can disappear. Your skills don't 💡 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business"
+     ]
+    },
+    "kc_life": {
+     "textos": [
+      "4-5 hours a day, $10-12K a month, and time with his son"
+     ],
+     "captions": [
+      "Build the business around the life you want 🌊 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business"
+     ]
+    }
+   },
+   "captions": [],
+   "usados": [
+    "kc_pricing.mp4",
+    "kc_life.mp4",
+    "kc_skills.mp4",
+    "kc_sponsor.mp4",
+    "kc_fiverr.mp4",
+    "kc_reels.mp4"
+   ]
   }
  },
  "cola": [
@@ -537,6 +614,54 @@
    "texto": "Ovechkin on eBay Live with CardVault 🃏 @ebaylive #eBayLive #cardvaultbreaks",
    "estado": "en_stock",
    "fuente": "ovechkin_016.mp4"
+  },
+  {
+   "id": "KingsCourt-01",
+   "campaña": "KingsCourt",
+   "archivo": "clips/KingsCourt-01.mp4",
+   "texto": "\"People price a lot of stuff, sell very little\" 💯 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
+   "estado": "en_stock",
+   "fuente": "kc_pricing.mp4"
+  },
+  {
+   "id": "KingsCourt-02",
+   "campaña": "KingsCourt",
+   "archivo": "clips/KingsCourt-02.mp4",
+   "texto": "Build the business around the life you want 🌊 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
+   "estado": "en_stock",
+   "fuente": "kc_life.mp4"
+  },
+  {
+   "id": "KingsCourt-03",
+   "campaña": "KingsCourt",
+   "archivo": "clips/KingsCourt-03.mp4",
+   "texto": "The platform can disappear. Your skills don't 💡 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
+   "estado": "en_stock",
+   "fuente": "kc_skills.mp4"
+  },
+  {
+   "id": "KingsCourt-04",
+   "campaña": "KingsCourt",
+   "archivo": "clips/KingsCourt-04.mp4",
+   "texto": "They said 400 downloads would never land a sponsor. He signed $10,400 🤯 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
+   "estado": "en_stock",
+   "fuente": "kc_sponsor.mp4"
+  },
+  {
+   "id": "KingsCourt-05",
+   "campaña": "KingsCourt",
+   "archivo": "clips/KingsCourt-05.mp4",
+   "texto": "He bet his friend he'd make $10K on Fiverr before the course was done 😂 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
+   "estado": "en_stock",
+   "fuente": "kc_fiverr.mp4"
+  },
+  {
+   "id": "KingsCourt-06",
+   "campaña": "KingsCourt",
+   "archivo": "clips/KingsCourt-06.mp4",
+   "texto": "The 'just document everything' advice, tested in real life 📱 @TheGapKing1 #thekingscourt #entrepreneur #ecommerce #business",
+   "estado": "en_stock",
+   "fuente": "kc_reels.mp4"
   }
  ],
  "dia": {
