@@ -550,8 +550,12 @@
       "campaña": "Emma",
       "archivo": "clips/Emma-02.mp4",
       "texto": "Nobody told me Emma Roberts was a card collector 😳 Summer Breaks is live on Fanatics Live @summerbreaks @collect @fanatics #SummerBreaks #FanaticsLive",
-      "estado": "planificado",
-      "fuente": "52 - Cody Loves the Drama.mp4"
+      "estado": "publicado",
+      "fuente": "52 - Cody Loves the Drama.mp4",
+      "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7712502875586301217",
+      "publicado": "2026-11-26T15:29:56Z",
+      "limite": "2026-11-26T15:59:56Z",
+      "buffer_post": "6b085072840933c30a69cff3"
     },
     {
       "id": "Emma-03",
