@@ -17,7 +17,17 @@
    "clave": "ArzUrus",
    "nombre": "Arz Urus Clipping Campaign",
    "id": "ea416af3-f1aa-4b56-9c8b-f2a51e6d6df4",
-   "nota": "Español, audio propio, sin preaprobación. Pendiente: leer sus 'normas de la comunidad' (no enlazadas). TikTok $0,50/1k, pago mínimo $10."
+   "nota": "PENDIENTE: el brief obliga a leer las 'normas de la comunidad de nuestra web' y a 'cumplir con el % 🇪🇸' y 'usar los formatos que se explican'; esa web no está enlazada (ni en Content Rewards, ni en el Drive, ni en el perfil) y no se ha podido leer. Sin esas normas no se puede comprobar el % de España exigido ni si nuestro formato vale. Pedir a Adrián el enlace o el texto.",
+   "datos": {
+    "audio": "español (creador español, Drive con brutos de YouTube)",
+    "tarifa_tiktok": "0,50 $/1k; pago mínimo 10 $ (= 20.000 vistas por clip); máximo 50 $",
+    "presupuesto": "2.049 $ libres de 5.000 $ (59 % gastado) a 26-11",
+    "plazo": "no indicado",
+    "tiktok_clipper_alejandrouru2": "40 vídeos recientes (nov-2026) con clips de Arz Urus: mediana 932 vistas; 5 de 40 superan 20.000; el mayor (62,6k) es el 30 % del total. Cuenta creada desde Argentina (locationCreated AR); captions con 🇪🇸. % de audiencia España: no disponible.",
+    "tiktok_clipper_arz_networth": "11 vídeos (mar-2026): mediana 2.280; 2 de 11 superan 20.000; el 95 % de las vistas viene de 2 virales (594,6k y 143,9k).",
+    "tiktok_cuenta_oficial": "@arz.urus: 373 seguidores, último vídeo de ene-2026, vistas 60-2.166 (su canal principal es Instagram).",
+    "temas_que_funcionan": "captions tipo 'millonario', coches y lujo, dinero; indicio de público español: emojis 🇪🇸 y referencias a España (indicio, no dato)."
+   }
   }
  ],
  "descartadas": {
@@ -37,7 +47,18 @@
   "Kitsch/First Press": "40% audiencia T1",
   "Let Him Mansplain": "brief en Notion no legible y material en frame.io (no Dropbox/Drive)",
   "Dalibor Cicman": "documento de reglas no enlazado (no se pudo leer completo)",
-  "T Bird": "material solo en YouTube"
+  "T Bird": "material solo en YouTube",
+  "Daniel Curto (CLIPPING ESPAÑOL)": "español, pero exige página dedicada, nombre de usuario y bio de clips, y 70 % audiencia Tier-1",
+  "Adriano Finucci": "español y pide ≥30 % de vistas de España (encaja), pero exige página dedicada solo a él",
+  "Sabri Malle": "español, pero preaprobación, cuenta con su nombre, bio obligatoria y publicar en 3 redes",
+  "Carlos Esparraga / Carlotta / FIXCAL / Roger García / Anto / Reyes de la Puja (Clips Hablando)": "español, pero página dedicada, nombre de cuenta o bio obligatorios (Anto además solo LATAM; varias casi agotadas)",
+  "Mario Lopez (Clips Hablando)": "español, sin reglas escritas que se puedan comprobar; 82 % gastado (175 $), 0,20 $/1k y pago mínimo 5 $ (25.000 vistas)",
+  "Matías Matti / Christian Nuñez": "español, pero link en bio obligatorio",
+  "Playita en Cuba / Kenny Rivers / Spanish Text Trend": "sonido oficial de TikTok obligatorio (no se puede con Buffer); Kenny Rivers además 40 % Tier 1",
+  "DJMIAMI - Vive Bonito": "letra en español y público EE. UU. + España (encaja), pero exige el sonido oficial de TikTok 'only'; nuestros 7 clips: mediana 313 vistas (pending). Solo viable si Adrián publica a mano con el sonido oficial",
+  "FANTASM": "dirigida a España, pero el audio del material es techno/inglés (no hay habla en español) y el material está en frame.io",
+  "Jungle Tiny Desk LATAM": "audio en inglés; páginas de México/Colombia",
+  "DONN PERIGNON": "inglés, link en bio y 40 % US"
  },
  "campañas": {
   "Madeon": {
@@ -715,7 +736,8 @@
     "campaña": null,
     "nota": "hueco: KingsCourt-01 cancelado (campaña retirada por idioma)"
    }
-  ]
+  ],
+  "nota": "26-11: desde las 17:40 rige el criterio Español y España; 19:30 y 23:00 sin clip (huecos)."
  },
  "historial": [
   {
