@@ -761,7 +761,7 @@
    "campaña": "SourJacks",
    "archivo": "clips/SourJacks-01.mp4",
    "texto": "#SourJacksPartner Splink landed on broccoli soup with SourJacks... then the wheel gave him DOUBLE 😭 would you eat it? #sourjacks #jasontheween #sourjacksshowdown",
-   "estado": "en_stock",
+   "estado": "planificado",
    "fuente": "1.mp4",
    "escena": [
     56.6,
@@ -835,7 +835,7 @@
     "ventana": "23:00",
     "clip_id": "SourJacks-01",
     "campaña": "SourJacks",
-    "borrador_buffer": null
+    "borrador_buffer": "6b086e1dc81617797dcbdb95"
    }
   ]
  },
