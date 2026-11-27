@@ -820,7 +820,7 @@
       "campaña": "SourJacks",
       "archivo": "clips/SourJacks-03.mp4",
       "texto": "#SourJacksPartner Miss Chimchim landed on sardines on SourJacks Showdown and the host made it count 😭 could you eat it? #sourjacks #jasontheween #sourjacksshowdown",
-      "estado": "publicado",
+      "estado": "entregado",
       "fuente": "4.mp4",
       "escena": [
         75.9,
@@ -831,7 +831,8 @@
       "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7712974595413773601",
       "publicado": "2026-11-27T22:00:21Z",
       "limite": "2026-11-27T22:30:21Z",
-      "buffer_post": "6b09fd74f3bfab63eab6546e"
+      "buffer_post": "6b09fd74f3bfab63eab6546e",
+      "nota": "27-11 23:25: figura en los envíos de Content Rewards (pending/tracking)."
     },
     {
       "id": "SourJacks-04",
