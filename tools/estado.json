@@ -403,6 +403,26 @@
      "7.mp4",
      16.8,
      35.6
+    ],
+    [
+     "3.mp4",
+     45.9,
+     65.9
+    ],
+    [
+     "6.mp4",
+     58.0,
+     91.0
+    ],
+    [
+     "5.mp4",
+     5.9,
+     34.6
+    ],
+    [
+     "4.mp4",
+     38.2,
+     53.9
     ]
    ],
    "presupuesto": "27-11: 1.410,70 $ libres de 2.000 $ (29,5 % gastado); activa, admisión abierta"
@@ -831,6 +851,62 @@
    ],
    "duracion": 18.8,
    "texto_pantalla": "Find the golden bag before the clock runs out"
+  },
+  {
+   "id": "SourJacks-06",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-06.mp4",
+   "texto": "#SourJacksPartner A2 Guapo spins the SourJacks wheel and tells everyone they can't beat him 😤 who's taking the $25K? #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "3.mp4",
+   "escena": [
+    45.9,
+    65.9
+   ],
+   "duracion": 20.0,
+   "texto_pantalla": "He says he wants it more than anybody here"
+  },
+  {
+   "id": "SourJacks-07",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-07.mp4",
+   "texto": "#SourJacksPartner Jalon has to cross without dropping a single SourJacks bag... slow and steady? 😭 #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "6.mp4",
+   "escena": [
+    58.0,
+    91.0
+   ],
+   "duracion": 33.0,
+   "texto_pantalla": "Drop a bag and time gets added. Watch Jalon try"
+  },
+  {
+   "id": "SourJacks-08",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-08.mp4",
+   "texto": "#SourJacksPartner Miss Chimchim diving for the golden bag on SourJacks Showdown while the clock keeps ticking ⏱️ would you find it faster? #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "5.mp4",
+   "escena": [
+    5.9,
+    34.6
+   ],
+   "duracion": 28.7,
+   "texto_pantalla": "Find the golden bag before the clock runs out"
+  },
+  {
+   "id": "SourJacks-09",
+   "campaña": "SourJacks",
+   "archivo": "clips/SourJacks-09.mp4",
+   "texto": "#SourJacksPartner Miss Chimchim landed on broccoli soup on SourJacks Showdown, all for a family trip to Greece 😭 #sourjacks #jasontheween #sourjacksshowdown",
+   "estado": "en_stock",
+   "fuente": "4.mp4",
+   "escena": [
+    38.2,
+    53.9
+   ],
+   "duracion": 15.7,
+   "texto_pantalla": "The wheel picked broccoli soup. Now she has to eat it"
   }
  ],
  "dia": {
@@ -995,7 +1071,27 @@
   }
  ],
  "criterio": "Desde el 26-11-2026 (tarde): campañas en inglés y español; 2 publicaciones diarias (16:30 y 23:00); prioridad SourJacks; ver tools/AUTOMATIZACION.md (Criterio de campañas, Montaje por escenas, Seguimiento a 72 h).",
- "rendimiento": [],
+ "rendimiento": [
+  {
+   "clip_id": "IG-01",
+   "campaña": "InternetGirl",
+   "formato": "tema",
+   "publicado": "2026-11-24T13:34:14Z",
+   "medido": "2026-11-27T07:45:00Z",
+   "horas": 66.2,
+   "vistas": 0,
+   "likes": 1,
+   "comentarios": 0,
+   "compartidos": 0,
+   "interaccion": null,
+   "cumple_vistas": false,
+   "cumple_interaccion": null,
+   "envio_estado": "pending/tracking",
+   "aprobado": null,
+   "pagado": null,
+   "nota": "0 vistas en TikTok y en Content Rewards a 66 h (posible vídeo sin distribución)"
+  }
+ ],
  "prueba": {
   "inicio": "2026-11-26",
   "ventanas": 2,
