@@ -801,7 +801,7 @@
       "campaña": "SourJacks",
       "archivo": "clips/SourJacks-02.mp4",
       "texto": "#SourJacksPartner Jalon says she needs the $25K, so she eats whatever the SourJacks wheel picks 😭 which one would you skip? #sourjacks #jasontheween #sourjacksshowdown",
-      "estado": "publicado",
+      "estado": "entregado",
       "fuente": "2.mp4",
       "escena": [
         41.4,
@@ -812,7 +812,8 @@
       "tiktok": "https://www.tiktok.com/@ojo.al.clip/video/7712873763309751591",
       "publicado": "2026-11-27T15:29:18Z",
       "limite": "2026-11-27T15:59:18Z",
-      "buffer_post": "6b09a1cd34d224b14a952960"
+      "buffer_post": "6b09a1cd34d224b14a952960",
+      "nota": "27-11 16:55: figura en los envíos de Content Rewards (pending/tracking)."
     },
     {
       "id": "SourJacks-03",
